@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'CsvFile@data');
+Route::get('/', function () {
+    return redirect(route('login'));
+});
 Route::get('datatable', 'CsvFile@data')->name('datatable');
 
 Route::get('csv_file', 'CsvFile@index');
