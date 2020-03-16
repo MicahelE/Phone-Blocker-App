@@ -232,7 +232,7 @@
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3>{{$block}}<sup style="font-size: 20px"></sup></h3>
+                <h3>{{$unblock}}<sup style="font-size: 20px"></sup></h3>
 
                 <p>Blocked Users</p>
               </div>
@@ -247,7 +247,7 @@
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>{{$unblock}}</h3>
+                <h3>{{$block}}</h3>
 
                 <p>Unblocked Users</p>
               </div>
