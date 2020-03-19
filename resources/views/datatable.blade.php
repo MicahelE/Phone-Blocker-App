@@ -22,6 +22,7 @@
   <style>
   /* th, td { white-space: nowrap; } */
   /* .card-body{width: 80%;} */
+  /* table {width:80%;} */
   .fa-spin{font-size: 2rem;}
   </style>
 </head>
@@ -238,6 +239,108 @@
                      
                      </div>
             <!-- /.card-header -->
+            <div id="editModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                  </div>
+                  <div class="modal-body">
+                    <form id="editForm" action="" class="form-horizontal" role="form" method="POST">
+                      {{ csrf_field() }}
+                      {{-- {{method_field('PUT')}} --}}
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="name">Name:</label>
+                        <div class="col-sm-10">
+                          <input name="name" type="name" class="form-control" id="name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="phone">Phone</label>
+                        <div class="col-sm-10">
+                          <input name="phone" type="text" class="form-control" id="phone" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-4" for="dob">Date of Birth</label>
+                        <div class="col-sm-10">
+                          <input name="dob" type="text" class="form-control" id="dob" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-2" for="lga">LGA</label>
+                        <div class="col-sm-10">
+                          <input name="lga" type="text" class="form-control" id="lga" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="momname">Mother's maiden name</label>
+                        <div class="col-sm-10">
+                          <input name="momname" type="text" class="form-control" id="momname" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="nin">NIN</label>
+                        <div class="col-sm-10">
+                          <input name="nin" type="text" class="form-control" id="nin" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="puk">PUK</label>
+                        <div class="col-sm-10">
+                          <input name="puk" type="text" class="form-control" id="puk" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="simno">Sim no</label>
+                        <div class="col-sm-10">
+                          <input name="simno" type="text" class="form-control" id="simno" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="phonetype1">Phonetype 1 with IMEI</label>
+                        <div class="col-sm-10">
+                          <input name="phonetype1" type="text" class="form-control" id="phonetype1" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="phonetype2">Phonetype 2 with IMEI</label>
+                        <div class="col-sm-10">
+                          <input name="phonetype2" type="text" class="form-control" id="phonetype2" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="phonetype3">Network</label>
+                        <div class="col-sm-10">
+                          <input name="phonetype3" type="text" class="form-control" id="phonetype3" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="address">Address</label>
+                        <div class="col-sm-10">
+                          <input name="address" type="text" class="form-control" id="address" >
+                        </div>
+                      </div>
+                     <input type="submit"  value="Edit">
+                    </form>
+                    <div class="deleteContent">
+                      Are you Sure you want to edit <span class="dname"></span> ? <span
+                        class="hidden did"></span>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn actionBtn" data-dismiss="modal">
+                        <span id="footer_action_button" class='glyphicon'> </span>
+                      </button>
+                      <button type="button" class="btn btn-warning" data-dismiss="modal">
+                        <span class='glyphicon glyphicon-remove'></span> Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
             <div class="card-body">
                 <table id="example1"  class="table table-bordered table-striped">
                     <thead>
@@ -250,17 +353,17 @@
                          <th>NIN</th>
                          <th>PUK</th>
                          <th>Sim No</th>
-                         <th>Phone type 1</th>
-                         <th>Phone type 2</th>
-                         <th>Phone type 3</th>
+                         <th>Phone type and Imei</th>
+                         <th>Phone type and Imei</th>
+                         <th>Network</th>
                          <th>Address</th>
-                         <th>Line Blockage status</th>
-                         
+                         <th>Phone Blockage status</th>
+                         <th>Actions</th>
                         </tr>
                        </thead>
                        <tbody>
                         @foreach($data as $row)
-                    <tr>     
+                    <tr data-id={{$row->id}}>     
                        <td> <a href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
                           <td>{{ $row->phonenumber }}</td>
                           <td>{{ $row->dob }}</td>
@@ -278,6 +381,15 @@
                             @else 
                             Unblocked
                             @endif</td>
+                            <td>
+                              <button class="edit-modal btn btn-info edit" data-id="{{$row->id}}"
+                              data-name="{{$row->name}}">
+                              <span class="glyphicon glyphicon-edit"></span> Edit
+                            </button>
+                            {{-- <button class="delete-modal btn btn-danger"
+                              data-id="{{$row->id}}" data-name="{{$row->name}}">
+                              <span class="glyphicon glyphicon-trash"></span> Delete
+                            </button></td> --}}
                          </tr> 
                         @endforeach
                         </tbody>
@@ -291,11 +403,12 @@
                         <th>NIN</th>
                         <th>PUK</th>
                         <th>Sim No</th>
-                        <th>Phone type 1</th>
-                        <th>Phone type 2</th>
-                        <th>Phone type 3</th>
-                        <th>Address</th>
-                        <th>Line Blockage status</th>
+                        <th>Phone type and Imei</th>
+                         <th>Phone type and Imei</th>
+                         <th>Network</th>
+                         <th>Address</th>
+                         <th>Phone Blockage status</th>
+                        <th>Actions</th>
                       </tr>
                     </tfoot>
                   </table>
@@ -343,11 +456,13 @@
 <!-- page script -->
 <script>
   $(function () {
-    $("#example1").DataTable({
-      "responsive": true,
+    var table=$("#example1").DataTable({
+      "responsive": false,
       "autoWidth": false,
+      
       // "scrollX": 54em,
-      "scrollX": true
+      "scrollX": true,
+      "scrollY": 500
     });
     $('#example2').DataTable({
       "paging": true,
@@ -358,6 +473,36 @@
       "autoWidth": false,
       "responsive": true,
     });
+
+   table.on('click', '.edit', function() {
+  $tr=$(this).closest('tr');
+  if($($tr).hasClass('child') ){
+    $tr=$tr.prev('parent');
+  }
+  var data= table.row($tr).data();
+  $name=$tr.find('a').text();
+  $id= $tr.attr("data-id");
+  $('#name').val($name);
+  $('#phone').val(data[1]);
+  $('#dob').val(data[2]);
+  $('#lga').val(data[3]);
+  $('#momname').val(data[4]);
+  $('#nin').val(data[5]);
+  $('#puk').val(data[6]);
+  $('#simno').val(data[7]);
+  $('#phonetype1').val(data[8]);
+  $('#phonetype2').val(data[9]);
+  $('#phonetype3').val(data[10]);
+  $('#address').val(data[11]);
+  // $('#lga').val(data[12]);
+
+  $('#editModal').modal('show');
+  $( "#editForm" ).attr( "action", "datatable/update/" + $id);
+  });
+
+
+  // $(document).ready(function(){
+
   });
 </script>
 </body>

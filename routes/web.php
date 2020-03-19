@@ -28,6 +28,7 @@ Route::get('csv_file/export', 'CsvFile@csv_export')->name('export');
 
 Route::post('csv_file/import', 'CsvFile@csv_import')->name('import');
 Route::get('/dashboard', 'PhoneuserController@data')->name('dashboard');
+Route::post('datatable/update/{id}', 'PhoneuserController@update')->name('datatable.update');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -15,4 +15,30 @@ class PhoneuserController extends Controller
         $unblock=Phoneuser::where('blockstatus', '0')->count();
        return view('dashboard', compact('data','block','unblock'));
     }
+    public function update(Request $request, $id)
+    {
+        $data=Phoneuser::latest()->paginate(10);
+      
+        $user= Phoneuser::find($id);
+        $user->name=$request->input('name');
+        $user->phonenumber=$request->input('phone');
+        $user->dob=$request->input('dob');
+        $user->lga=$request->input('lga');
+        $user->momname=$request->input('momname');
+        $user->address=$request->input('address');
+        $user->nin=$request->input('nin');
+        $user->puk=$request->input('puk');
+        if ($request->input('simno')!= "")  $user->simno=$request->input('simno');
+        if ($request->input('phonetype1')!= "")   $user->phonetype1=$request->input('phonetype1');
+            if ($request->input('phonetype2')!= "")   $user->phonetype2=$request->input('phonetype2');
+                if ($request->input('phonetype3')!= "")   $user->phonetype3=$request->input('phonetype3');
+        
+        
+        $user->save();
+        return redirect()->route('datatable');
+        // return route('datatable');
+        // return view('datatable', compact('data'));
+    }
+
+
 }
