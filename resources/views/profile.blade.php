@@ -239,23 +239,22 @@
                 </div>
 
                 <h3 class="profile-username text-center">{{ $profile->name }}</h3>
-
-                <p class="text-muted text-center">{{ $profile->phonenumber }}</p>
+                <p class="text-muted text-center"> <b>National Identification Number:</b>  {{ $profile->nin }}</p>
+                <p class="text-muted text-center"><b>Phone no: </b>{{ $profile->phonenumber }}</p>
 
                 <ul class="list-group list-group-unbordered mb-3">
                   <li class="list-group-item">
-                    <b>Line blockage status</b> <a class="float-right">
+                    {{-- <b>Line blockage status</b> <a class="float-right">
                         @if ($profile->blockstatus)
                         Blocked
                         @else 
                         Unblocked
                         @endif
                     </a>
-                    <b id ="block" hidden>@if ($profile->blockstatus)
-                      Unblocking...<i class="fas fa-spinner fa-spin"> </i>
-                      @else 
-                      Blocking... <i class="fas fa-spinner fa-spin"> </i>
-                      @endif</b>
+                  </b> --}}
+                    <b id ="block" hidden >Unblocking/Blocking...<i class="fas fa-spinner fa-spin"> </i></b>
+                      
+                     
                   </li>
                   <li class="list-group-item">
                     <b>Address</b> <a class="float-right">{{ $profile->address }}</a>
@@ -264,8 +263,40 @@
                     <b>Date of Birth</b> <a class="float-right">{{ $profile->dob }}</a>
                   </li>
                 </ul>
-
-                <a href="{{route('update',$profile->id)}}" class="btn btn-primary btn-block" onclick="$('#block').removeAttr('hidden'); "><b>Block/Unblock</b></a>
+                <form action="{{route('block',$profile->id)}}" class="form-horizontal" method="POST">
+                  {{ csrf_field() }}
+                  <fieldset>
+                  
+                  <!-- Form Name -->
+                  <legend>Phones connected to this user</legend>
+                  
+                  <!-- Select Basic -->
+                  {{-- <div class="form-group">
+                    <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
+                    <div class="col-md-4">
+                      <select id="selectbasic" name="selectbasic" class="form-control">
+                        <option value="1">Option one</option>
+                        <option value="2">Option two</option>
+                      </select>
+                    </div>
+                  </div> --}}
+                  <div>
+                    <select name="blockstatus">
+                        <option>Choose Phone</option>
+                        <option value="blockstatus">Phonetype1</option>
+                        <option value="blockstatus2">Phonetype2</option>
+                        <option value="blockstatus3">Phonetype3</option>
+                    </select>
+                </div>
+                <div class="blockstatus box text-center"><strong> @if (!($profile->phonetype1 == "") ) {{$profile->phonetype1}} and it is {{ $profile->blockstatus ? 'Blocked' : 'Unblocked' }} from all networks @else Not Available @endif  </strong></div>
+                <div class="blockstatus2 box text-center"><strong> @if (!($profile->phonetype2 == "")) {{$profile->phonetype2}} and it is {{ $profile->blockstatus2 ? 'Blocked' : 'Unblocked' }} from all networks @else Not Available @endif </strong></div>
+                <div class="blockstatus3 box text-center"><strong> @if (!($profile->phonetype3 == "")) {{$profile->phonetype3}} and it is {{ $profile->blockstatus3 ? 'Blocked' : 'Unblocked' }} from all networks @else Not Available @endif </strong></div>
+                  {{-- <input type="submit"> --}}
+                  </fieldset>
+                  <br><br><br><br>
+                  
+                <button type="submit" class="btn btn-primary btn-block" onclick="$('#block').removeAttr('hidden'); "><b>Block/Unblock</b></button>
+              </form>
               </div>
               <!-- /.card-body -->
             </div>
@@ -345,5 +376,20 @@
 <script src="{{asset('dist/js/adminlte.min.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dist/js/demo.js')}}"></script>
+<script>
+  $(document).ready(function(){
+      $("select").change(function(){
+          $(this).find("option:selected").each(function(){
+              var optionValue = $(this).attr("value");
+              if(optionValue){
+                  $(".box").not("." + optionValue).hide();
+                  $("." + optionValue).show();
+              } else{
+                  $(".box").hide();
+              }
+          });
+      }).change();
+  });
+  </script>
 </body>
 </html>

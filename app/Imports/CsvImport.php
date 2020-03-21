@@ -29,7 +29,10 @@ class CsvImport implements ToModel, WithHeadingRow
             'phonetype1'     => $row['phone_number_1'],
             'phonetype2'    => $row['phone_number_2'], 
             'phonetype3'     => $row['phone_number_3'],
-            'blockstatus'    => $row['blockage_status'],
+            'network'    => $row['network'],
+            'blockstatus'    => false,
+            'blockstatus2'    => false,
+            'blockstatus3'    => false,
         ]);
     }
 }

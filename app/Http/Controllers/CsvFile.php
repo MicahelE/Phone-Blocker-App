@@ -37,7 +37,7 @@ class CsvFile extends Controller
     }
 
     public function data()
-    { $data=Phoneuser::latest()->paginate(10);
+    { $data=Phoneuser::all();
        return view('datatable', compact('data'));
     }
 
@@ -52,6 +52,14 @@ class CsvFile extends Controller
     { 
         $user= Phoneuser::find($id);
         $user->update(['blockstatus' => !$user->blockstatus]);
+        return back();
+    }
+
+    public function block(Request $request, $id)
+    { 
+        $user= Phoneuser::find($id);
+        $block=$request->input('blockstatus');
+        $user->update([$block => !$user->$block]);
         return back();
     }
 }

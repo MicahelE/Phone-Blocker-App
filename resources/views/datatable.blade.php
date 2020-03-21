@@ -226,13 +226,13 @@
                       <h3 class="panel-title">Phone users</h3>
                      </div>
                      <div class="panel-body">
-                      <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
+                      <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data" onsubmit="$('.fa-spinner').removeAttr('hidden');">
                        @csrf
                        <input type="file" name="file" accept=".csv" required>
                        <i class="fas fa-spinner fa-spin" hidden></i>
                              <br>
                              
-                             <button class="btn btn-success" onclick="$('.fa-spinner').removeAttr('hidden'); ">Import User Data</button>
+                             <button class="btn btn-success" onclick=" ">Import User Data</button>
                              <a class="btn btn-warning" href="{{ route('export') }}">Export User Data</a>
                              
                       </form>
@@ -312,9 +312,15 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="control-label col-sm-6" for="phonetype3">Network</label>
+                        <label class="control-label col-sm-6" for="phonetype3">Phonetype 3 with IMEI</label>
                         <div class="col-sm-10">
                           <input name="phonetype3" type="text" class="form-control" id="phonetype3" >
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="control-label col-sm-6" for="network">Network</label>
+                        <div class="col-sm-10">
+                          <input name="network" type="text" class="form-control" id="network" >
                         </div>
                       </div>
                       <div class="form-group">
@@ -353,11 +359,15 @@
                          <th>NIN</th>
                          <th>PUK</th>
                          <th>Sim No</th>
-                         <th>Phone type and Imei</th>
-                         <th>Phone type and Imei</th>
+                         <th>Phone type and Imei 1</th>
+                         <th>Phone 1 blockage status</th>
+                         <th>Phone type and Imei 2</th>
+                         <th>Phone 2 blockage status</th>
+                         <th>Phone type and Imei 3</th>
+                         <th>Phone 3 blockage status</th>
                          <th>Network</th>
                          <th>Address</th>
-                         <th>Phone Blockage status</th>
+                         
                          <th>Actions</th>
                         </tr>
                        </thead>
@@ -373,19 +383,23 @@
                           <td>{{ $row->puk }}</td>
                           <td>{{ $row->simno }}</td>
                           <td>{{ $row->phonetype1 }}</td>
+                          <td>{{$row->blockstatus}}</td>
                           <td>{{ $row->phonetype2 }}</td>
+                          <td>{{$row->blockstatus2}}</td>
                           <td>{{ $row->phonetype3 }}</td>
+                          <td>{{$row->blockstatus3}}</td>
+                          <td>{{ $row->network }}</td>
                           <td>{{ $row->address }}</td>
-                          <td>@if ($row->blockstatus)
+                          {{-- <td>@if ($row->blockstatus)
                             Blocked
                             @else 
                             Unblocked
-                            @endif</td>
+                            @endif</td> --}}
                             <td>
                               <button class="edit-modal btn btn-info edit" data-id="{{$row->id}}"
                               data-name="{{$row->name}}">
                               <span class="glyphicon glyphicon-edit"></span> Edit
-                            </button>
+                            </button></td>
                             {{-- <button class="delete-modal btn btn-danger"
                               data-id="{{$row->id}}" data-name="{{$row->name}}">
                               <span class="glyphicon glyphicon-trash"></span> Delete
@@ -403,12 +417,17 @@
                         <th>NIN</th>
                         <th>PUK</th>
                         <th>Sim No</th>
-                        <th>Phone type and Imei</th>
-                         <th>Phone type and Imei</th>
+                        <th>Phone type and Imei 1</th>
+                         <th>Phone 1 blockage status</th>
+                         <th>Phone type and Imei 2</th>
+                         <th>Phone 2 blockage status</th>
+                         <th>Phone type and Imei 3</th>
+                         <th>Phone 3 blockage status</th>
                          <th>Network</th>
                          <th>Address</th>
-                         <th>Phone Blockage status</th>
-                        <th>Actions</th>
+                         
+                         <th>Actions</th>
+
                       </tr>
                     </tfoot>
                   </table>
@@ -491,9 +510,10 @@
   $('#puk').val(data[6]);
   $('#simno').val(data[7]);
   $('#phonetype1').val(data[8]);
-  $('#phonetype2').val(data[9]);
-  $('#phonetype3').val(data[10]);
-  $('#address').val(data[11]);
+  $('#phonetype2').val(data[10]);
+  $('#phonetype3').val(data[12]);
+  $('#network').val(data[14]);
+  $('#address').val(data[15]);
   // $('#lga').val(data[12]);
 
   $('#editModal').modal('show');

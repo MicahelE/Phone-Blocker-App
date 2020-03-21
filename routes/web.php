@@ -24,6 +24,7 @@ Route::get('datatable', 'CsvFile@data')->name('datatable');
 Route::get('csv_file', 'CsvFile@index');
 Route::get('/profile/{id}', 'CsvFile@profile')->name('profile');
 Route::get('/update/{id}', 'CsvFile@update')->name('update');
+Route::post('/block/{id}', 'CsvFile@block')->name('block');
 Route::get('csv_file/export', 'CsvFile@csv_export')->name('export');
 
 Route::post('csv_file/import', 'CsvFile@csv_import')->name('import');

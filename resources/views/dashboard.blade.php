@@ -289,7 +289,7 @@
                 <div class="card-tools">
                   <ul class="nav nav-pills ml-auto">
                     <li class="nav-item">
-                      <a class="nav-link" href="#revenue-chart" data-toggle="tab">Area</a>
+                      <a class="nav-link" href="#" data-toggle="tab">Area</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" href="#sales-chart" data-toggle="tab">Donut</a>

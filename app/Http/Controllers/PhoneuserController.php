@@ -32,6 +32,8 @@ class PhoneuserController extends Controller
         if ($request->input('phonetype1')!= "")   $user->phonetype1=$request->input('phonetype1');
             if ($request->input('phonetype2')!= "")   $user->phonetype2=$request->input('phonetype2');
                 if ($request->input('phonetype3')!= "")   $user->phonetype3=$request->input('phonetype3');
+                
+                if ($request->input('network')!= "")   $user->network=$request->input('network');
         
         
         $user->save();
