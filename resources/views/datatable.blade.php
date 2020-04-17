@@ -58,12 +58,14 @@ Coded by www.creative-tim.com
   <!-- CSS Files -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/css/paper-dashboard.min1036.css?v=2.1.1" rel="stylesheet" />
+  
    {{-- custom Stylesheet --}}
   <link href="assets/css/style.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="assets/demo/demo.css" rel="stylesheet" />
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Google Tag Manager -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <style>
     #example1 th{
   /* color:  #51cbce; */

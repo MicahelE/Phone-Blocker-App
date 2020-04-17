@@ -180,7 +180,8 @@ Coded by www.creative-tim.com
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="javascript:;">Paper Dashboard 2 PRO</a>
+            <a class="navbar-brand" href="javascript:;">
+              PHONE BLOCK APP</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -250,24 +251,24 @@ Coded by www.creative-tim.com
                     @ {{ $profile->name }}
                   </p>
                 </div>
-                <p class="description text-center">
+                {{-- <p class="description text-center">
                   "I like the way you work it <br>
                   No diggity <br>
                   I wanna bag it up"
-                </p>
+                </p> --}}
               </div>
               <div class="card-footer">
                 <hr>
                 <div class="button-container">
                   <div class="row">
                     <div class="col-lg-3 col-md-6 col-6 ml-auto">
-                      <h5>12<br><small>Files</small></h5>
+                      {{-- <h5>12<br><small>Files</small></h5> --}}
                     </div>
                     <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
-                      <h5>2GB<br><small>Used</small></h5>
+                      {{-- <h5>2GB<br><small>Used</small></h5> --}}
                     </div>
                     <div class="col-lg-3 mr-auto">
-                      <h5>24,6$<br><small>Spent</small></h5>
+                      {{-- <h5>24,6$<br><small>Spent</small></h5> --}}
                     </div>
                   </div>
                 </div>
@@ -407,8 +408,8 @@ Coded by www.creative-tim.com
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
-                        <label>About Me</label>
-                        <textarea rows="4" cols="80" class="form-control textarea">Oh so, your weak rhyme You doubt I'll bother, reading into it</textarea>
+                        <label>Moms maiden name</label>
+                        <textarea rows="4" cols="80" class="form-control textarea">{{ $profile->momname }}</textarea>
                       </div>
                     </div>
                   </div>
