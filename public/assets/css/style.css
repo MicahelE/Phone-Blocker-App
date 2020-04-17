@@ -1,0 +1,15 @@
+
+
+
+ /* th{ white-space: nowrap; } */
+ td, th {text-align: center;}
+ /* .card-body{width: 80%;} */
+ /* table {width:80%;} */
+ .fa-spin{font-size: 2rem;}
+
+
+tr th{
+  color:  #51cbce ; 
+}
+.fa-spin{font-size: 2rem;}
+td a{font-weight: bold;}
