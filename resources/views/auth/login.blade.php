@@ -125,7 +125,7 @@ Coded by www.creative-tim.com
             </a>
           </li>
           <li class="nav-item ">
-            <a href="/datatables" class="nav-link">
+            <a href="/datatable" class="nav-link">
               <i class="nc-icon nc-satisfied"></i>
               User
             </a>
@@ -195,7 +195,7 @@ Coded by www.creative-tim.com
                   </div>
                 </div>
                 <div class="card-footer ">
-                  <a href="javascript:;" class="btn btn-warning btn-round btn-block mb-3">Get Started</a>
+                  <button href="javascript:;" class="btn btn-warning btn-round btn-block mb-3">Get Started</button>
                 </div>
               </div>
             </form>
