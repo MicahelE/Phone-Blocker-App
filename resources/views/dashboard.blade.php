@@ -150,7 +150,7 @@ Coded by www.creative-tim.com
           </a>
         </li>
         <li>
-          <a data-toggle="collapse" href="/datatable">
+          <a data-toggle="" href="/datatable">
             <i class="nc-icon nc-book-bookmark"></i>
             <p>
               Datatable <b class=""></b>
