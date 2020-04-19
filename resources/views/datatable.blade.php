@@ -159,7 +159,7 @@ Coded by www.creative-tim.com
             </a>
           </li>
           <li>
-            <a data-toggle="collapse" href="/datatable">
+            <a  href="/datatable">
               <i class="nc-icon nc-book-bookmark"></i>
               <p>
                 Datatable <b class=""></b>
@@ -276,7 +276,7 @@ Coded by www.creative-tim.com
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title"></h4>
+                        <h4 class="modal-title">EDIT USER DETAILS</h4>
                       </div>
                       <div class="modal-body">
                         <form id="editForm" action="" class="form-horizontal" role="form" method="POST">
@@ -360,16 +360,17 @@ Coded by www.creative-tim.com
                               <input name="address" type="text" class="form-control" id="address" >
                             </div>
                           </div>
-                         <input type="submit"  value="Edit">
-                        </form>
-                        <div class="deleteContent">
+                         {{-- <input type="submit"  value="Edit"> --}}
+                        
+                        {{-- <div class="deleteContent">
                           Are you Sure you want to edit <span class="dname"></span> ? <span
                             class="hidden did"></span>
-                        </div>
+                        </div> --}}
                         <div class="modal-footer">
-                          <button type="button" class="btn actionBtn" data-dismiss="modal">
-                            <span id="footer_action_button" class='glyphicon'> </span>
+                          <button type="submit"  value="Edit" class="btn btn-success" >
+                            <span class='glyphicon glyphicon-remove'></span> Edit
                           </button>
+                        </form>
                           <button type="button" class="btn btn-warning" data-dismiss="modal">
                             <span class='glyphicon glyphicon-remove'></span> Close
                           </button>
@@ -471,22 +472,7 @@ Coded by www.creative-tim.com
       </div>
       <footer class="footer footer-black  footer-white ">
         <div class="container-fluid">
-          <div class="row">
-            <nav class="footer-nav">
-              <ul>
-                <li><a href="https://www.creative-tim.com/" target="_blank">Creative Tim</a></li>
-                <li><a href="https://www.creative-tim.com/blog" target="_blank">Blog</a></li>
-                <li><a href="https://www.creative-tim.com/license" target="_blank">Licenses</a></li>
-              </ul>
-            </nav>
-            <div class="credits ml-auto">
-              <span class="copyright">
-                © <script>
-                  document.write(new Date().getFullYear())
-                </script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
-              </span>
-            </div>
-          </div>
+         
         </div>
       </footer>
     </div>
