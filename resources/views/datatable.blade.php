@@ -24,7 +24,7 @@ Coded by www.creative-tim.com
   <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Paper Dashboard 2 PRO by Creative Tim
+   Phone Block App
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!-- Extra details for Live View on GitHub Pages -->
@@ -100,20 +100,20 @@ Coded by www.creative-tim.com
       <!--
         Tip 1: You can change the color of the sidebar using: data-color=" default | primary | info | success | warning | danger |"
     -->
-      <div class="logo">
-        <a href="https://www.creative-tim.com/" class="simple-text logo-mini">
-          <div class="logo-image-small">
-            <img src="../../assets/img/logo-small.png">
-          </div>
-          <!-- <p>CT</p> -->
-        </a>
-        <a href="https://www.creative-tim.com/" class="simple-text logo-normal">
-          PHONE BLOCK APP
-          <!-- <div class="logo-image-big">
-            <img src="../../assets/img/logo-big.png">
-          </div> -->
-        </a>
-      </div>
+    <div class="logo">
+      <a href="/dashboard" class="simple-text logo-mini">
+        <div class="logo-image-small">
+          <img src="../../assets/img/logo-small.png">
+        </div>
+        <!-- <p>CT</p> -->
+      </a>
+      <a href="/dashboard" class="simple-text logo-normal">
+        PHONE BLOCK APP
+        <!-- <div class="logo-image-big">
+          <img src="../../assets/img/logo-big.png">
+        </div> -->
+      </a>
+    </div>
       <div class="sidebar-wrapper">
         <div class="user">
           <div class="photo">
