@@ -79,6 +79,7 @@ Coded by www.creative-tim.com
     })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
   </script>
   <!-- End Google Tag Manager -->
+  {{-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script> --}}
 </head>
 
 <body class="">
@@ -339,6 +340,28 @@ Coded by www.creative-tim.com
               </div>
             </div>
           </div> --}}
+          
+          {{-- <canvas id="myChart" width="100" height="100"></canvas> --}}
+          {{-- <canvas id=chartHours width="400" height="100"></canvas> --}}
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">Users Behavior</h5>
+                <p class="card-category">24 Hours performance</p>
+              </div>
+              <div class="card-body ">
+                <canvas id=chartHours width="400" height="100"></canvas>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-history"></i> Updated 3 minutes ago
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         {{-- <div class="row">
           <div class="col-lg-4 col-sm-6">
@@ -779,11 +802,127 @@ Coded by www.creative-tim.com
 
     });
   </script>
+  {{-- <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script> --}}
+    <script>
+      var ctx = document.getElementById('chartHours').getContext("2d");
+
+var myChart = new Chart(ctx, {
+  type: 'line',
+
+  data: {
+    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
+    datasets: [{
+        borderColor: "#6bd098",
+        backgroundColor: "#6bd098",
+        pointRadius: 0,
+        pointHoverRadius: 0,
+        borderWidth: 3,
+        data: [300, 310, 316, 322, 330, 326, 333, 345, 338, 354]
+      },
+      {
+        borderColor: "#f17e5d",
+        backgroundColor: "#f17e5d",
+        pointRadius: 0,
+        pointHoverRadius: 0,
+        borderWidth: 3,
+        data: [320, 340, 365, 360, 370, 385, 390, 384, 408, 420]
+      },
+      {
+        borderColor: "#fcc468",
+        backgroundColor: "#fcc468",
+        pointRadius: 0,
+        pointHoverRadius: 0,
+        borderWidth: 3,
+        data: [370, 394, 415, 409, 425, 445, 460, 450, 478, 484]
+      }
+    ]
+  },
+  options: {
+    legend: {
+      display: false
+    },
+
+    tooltips: {
+      enabled: false
+    },
+
+    scales: {
+      yAxes: [{
+
+        ticks: {
+          fontColor: "#9f9f9f",
+          beginAtZero: false,
+          maxTicksLimit: 5,
+          //padding: 20
+        },
+        gridLines: {
+          drawBorder: false,
+          zeroLineColor: "#ccc",
+          color: 'rgba(255,255,255,0.05)'
+        }
+
+      }],
+
+      xAxes: [{
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(255,255,255,0.1)',
+          zeroLineColor: "transparent",
+          display: false,
+        },
+        ticks: {
+          padding: 20,
+          fontColor: "#9f9f9f"
+        }
+      }]
+    },
+  }
+});
+    </script>
   <script>
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
       demo.initDashboardPageCharts();
-
+      // demo.initChartsPages();
 
       demo.initVectorMap();
 
