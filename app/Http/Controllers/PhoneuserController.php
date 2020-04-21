@@ -42,5 +42,13 @@ class PhoneuserController extends Controller
         // return view('datatable', compact('data'));
     }
 
+    public function blockedlines()
+    { $data=Phoneuser::where('blockstatus', '1')->orWhere('blockstatus2', '1')->orWhere('blockstatus3', '1')->get();
+        // $block=DB::table('phoneusers')->where('blockedstatus', 1)->count();
+        // $block=Phoneuser::where('blockstatus', '1')->count();
+        // $unblock=Phoneuser::where('blockstatus', '0')->count();
+       return view('blockedlines', compact('data'));
+    }
+
 
 }

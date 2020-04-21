@@ -20,7 +20,7 @@ Route::get('/', function () {
     return redirect(route('login'));
 });
 Route::get('datatable', 'CsvFile@data')->name('datatable');
-
+Route::get('blockedlines', 'PhoneuserController@blockedlines')->name('blockedlines');
 Route::get('csv_file', 'CsvFile@index');
 Route::get('/profile/{id}', 'CsvFile@profile')->name('profile');
 Route::get('/update/{id}', 'CsvFile@update')->name('update');

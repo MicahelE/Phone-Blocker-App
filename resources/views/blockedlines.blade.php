@@ -255,7 +255,7 @@ Coded by www.creative-tim.com
           <div class="col-md-12">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title">PHONE USER TABLE</h4>
+                <h4 class="card-title">BLOCKED USER TABLE</h4>
               </div>
               <div class="card-body">
                 <div class="toolbar">
@@ -265,7 +265,7 @@ Coded by www.creative-tim.com
                   <div class="panel-heading">
                    <h3 class="panel-title"></h3>
                   </div>
-                  <div class="panel-body">
+                  {{-- <div class="panel-body">
                    <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data" onsubmit="$('.fa-spinner').removeAttr('hidden');">
                     @csrf
                     <input type="file" name="file" accept=".csv" required>
@@ -277,7 +277,7 @@ Coded by www.creative-tim.com
                           
                    </form>
                   
-                  </div>
+                  </div> --}}
                 <div id="editModal" class="modal fade" role="dialog">
                   <div class="modal-dialog">
                     <!-- Modal content-->
@@ -387,39 +387,40 @@ Coded by www.creative-tim.com
                     </div>
                   </div> 
                 </div>
-                <table id="example1"  class="table row-border">
+                <table id="example1"  class="table row-border blocked">
                   <thead>
                       <tr>
-                       <th style="white-space: nowrap; " >Name</th>
-                       <th style="white-space: nowrap; ">Phone no</th>
-                       <th style="white-space: nowrap; ">Date of Birth</th>
+                       <th  >Name</th>
+                       <th  style="white-space: nowrap; ">Phone no</th>
+                       {{-- <th style="white-space: nowrap; ">Date of Birth</th>
                        <th style="white-space: nowrap; ">LGA</th>
                        <th style="white-space: nowrap; ">Mother's maiden name</th>
                        <th style="white-space: nowrap; ">NIN</th>
-                       <th style="white-space: nowrap; ">PUK</th>
+                       <th style="white-space: nowrap; ">PUK</th> --}}
                        <th style="white-space: nowrap; ">Sim No</th>
-                       <th >Phone type and Imei 1</th>
+                       <th style="white-space: nowrap; " >Phone type and Imei 1</th>
                        <th style="white-space: nowrap; ">Phone 1 status</th>
-                       <th>Phone type and Imei 2</th>
-                       <th>Phone 2 status</th>
-                       <th>Phone type and Imei 3</th>
-                       <th>Phone 3 status</th>
+                       <th style="white-space: nowrap; ">Phone type and Imei 2</th>
+                       <th style="white-space: nowrap; ">Phone 2 status</th>
+                       <th style="white-space: nowrap; ">Phone type and Imei 3</th>
+                       <th style="white-space: nowrap; ">Phone 3 status</th>
                        <th>Network</th>
-                       <th>Address</th>
+                       <th style="white-space: nowrap; ">Blocked By</th>
+                       <th style="white-space: nowrap; ">Updated At</th>
                        
-                       <th>Actions</th>
+                       {{-- <th>Actions</th> --}}
                       </tr>
                      </thead>
                      <tbody>
                       @foreach($data as $row)
                   <tr data-id={{$row->id}}>     
-                     <td> <a href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
-                        <td>{{ $row->phonenumber }}</td>
-                        <td>{{ $row->dob }}</td>
+                     <td  class="name" > <a href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
+                        <td class="name">{{ $row->phonenumber }}</td>
+                        {{-- <td>{{ $row->dob }}</td>
                         <td>{{ $row->lga }}</td>
                         <td>{{ $row->momname }}</td>
                         <td>{{ $row->nin }}</td>
-                        <td>{{ $row->puk }}</td>
+                        <td>{{ $row->puk }}</td> --}}
                         <td>{{ $row->simno }}</td>
                         <td>{{ $row->phonetype1 }}</td>
                         <td>{{$row->blockstatus}}</td>
@@ -427,21 +428,22 @@ Coded by www.creative-tim.com
                         <td>{{$row->blockstatus2}}</td>
                         <td>{{ $row->phonetype3 }}</td>
                         <td>{{$row->blockstatus3}}</td>
-                        <td>{{ $row->network }}</td>
-                        <td>{{ $row->address }}</td>
+                        <td class="admin" >{{ $row->network }}</td>
+                        <td class="admin" >Admin</td>
+                        <td class="admin" >{{ $row->updated_at }}</td>
                         {{-- <td>@if ($row->blockstatus)
                           Blocked
                           @else 
                           Unblocked
                           @endif</td> --}}
-                          <td>
+                        {{-- // <td> --}}
                             {{-- <button class="edit-modal btn btn-info edit" data-id="{{$row->id}}"
                             data-name="{{$row->name}}">
                             <span class="glyphicon glyphicon-edit"></span> Edit
                           </button> --}}
-                          <button href="#" rel="tooltip" class="btn btn-warning btn-link btn-icon btn-sm edit" data-name="{{$row->name}}" data-id="{{$row->id}}"><i class="fa fa-edit"></i></button>
+                          {{-- <button href="#" rel="tooltip" class="btn btn-warning btn-link btn-icon btn-sm edit" data-name="{{$row->name}}" data-id="{{$row->id}}"><i class="fa fa-edit"></i></button> --}}
                           {{-- <a href="#" class="btn btn-danger btn-link btn-icon btn-sm remove"><i class="fa fa-times"></i></a> --}}
-                        </td>
+                     {{-- </td> --}}
                           {{-- <button class="delete-modal btn btn-danger"
                             data-id="{{$row->id}}" data-name="{{$row->name}}">
                             <span class="glyphicon glyphicon-trash"></span> Delete

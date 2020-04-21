@@ -13,4 +13,7 @@ tr th{
 }
 .fa-spin{font-size: 2rem;}
 td a{font-weight: bold;}
+/* .blocked td{text-align: right;} */
+.name {text-align: left;}
+.admin {text-align: right;}
 .modal-title{ color:  #51cbce ; }

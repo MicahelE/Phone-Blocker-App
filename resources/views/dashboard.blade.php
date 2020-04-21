@@ -159,6 +159,15 @@ Coded by www.creative-tim.com
           </a>
          
         </li>
+        <li>
+          <a  href="/blockedlines">
+            <i class="nc-icon nc-book-bookmark"></i>
+            <p>
+              Blockedlines <b class=""></b>
+            </p>
+          </a>
+         
+        </li>
         
       </ul>
     </div>
@@ -236,7 +245,7 @@ Coded by www.creative-tim.com
       <!-- End Navbar -->
       <div class="content">
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
                 <div class="row">
@@ -262,7 +271,7 @@ Coded by www.creative-tim.com
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
                 <div class="row">
@@ -274,7 +283,7 @@ Coded by www.creative-tim.com
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <p class="card-category">{{$unblock}}</p>
-                      <p class="card-title">Blocked <p>
+                      <p class="card-title">Blocked Users <p>
                     </div>
                   </div>
                 </div>
@@ -288,7 +297,7 @@ Coded by www.creative-tim.com
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card card-stats">
               <div class="card-body ">
                 <div class="row">
@@ -300,7 +309,34 @@ Coded by www.creative-tim.com
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <p class="card-category">{{$block}}</p>
-                      <p class="card-title">Unblocked <p>
+                      <p class="card-title">Unblocked Users <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer ">
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-clock-o"></i>
+                  <a href="{{ route('datatable') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-mobile text-danger"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category"></p>
+                      <p class="card-title">SmartPhone Users <p>
                     </div>
                   </div>
                 </div>
@@ -358,6 +394,52 @@ Coded by www.creative-tim.com
                 <hr>
                 <div class="stats">
                   <i class="fa fa-history"></i> Updated 3 minutes ago
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">Email Statistics</h5>
+                <p class="card-category">Last Campaign Performance</p>
+              </div>
+              <div class="card-body ">
+                <canvas id="chartEmail"></canvas>
+              </div>
+              <div class="card-footer ">
+                <div class="legend">
+                  <i class="fa fa-circle text-primary"></i> Opened
+                  <i class="fa fa-circle text-warning"></i> Read
+                  <i class="fa fa-circle text-danger"></i> Deleted
+                  <i class="fa fa-circle text-gray"></i> Unopened
+                </div>
+                <hr>
+                <div class="stats">
+                  <i class="fa fa-calendar"></i> Number of emails sent
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-title">NASDAQ: AAPL</h5>
+                <p class="card-category">Line Chart with Points</p>
+              </div>
+              <div class="card-body">
+                <canvas id="speedChart" width="400" height="100"></canvas>
+              </div>
+              <div class="card-footer">
+                <div class="chart-legend">
+                  <i class="fa fa-circle text-info"></i> Tesla Model S
+                  <i class="fa fa-circle text-warning"></i> BMW 5 Series
+                </div>
+                <hr />
+                <div class="card-stats">
+                  <i class="fa fa-check"></i> Data information certified
                 </div>
               </div>
             </div>
@@ -917,6 +999,125 @@ var myChart = new Chart(ctx, {
     },
   }
 });
+
+
+// Additional Charts
+//Chart Email
+var ctx = document.getElementById('chartEmail').getContext("2d");
+
+var myChart = new Chart(ctx, {
+  type: 'pie',
+  data: {
+    labels: [1, 2, 3],
+    datasets: [{
+      label: "Emails",
+      pointRadius: 0,
+      pointHoverRadius: 0,
+      backgroundColor: [
+        '#e3e3e3',
+        '#4acccd',
+        '#fcc468',
+        '#ef8157'
+      ],
+      borderWidth: 0,
+      data: [342, 480, 530, 120]
+    }]
+  },
+
+  options: {
+
+    legend: {
+      display: false
+    },
+
+    pieceLabel: {
+      render: 'percentage',
+      fontColor: ['white'],
+      precision: 2
+    },
+
+    tooltips: {
+      enabled: false
+    },
+
+    scales: {
+      yAxes: [{
+
+        ticks: {
+          display: false
+        },
+        gridLines: {
+          drawBorder: false,
+          zeroLineColor: "transparent",
+          color: 'rgba(255,255,255,0.05)'
+        }
+
+      }],
+
+      xAxes: [{
+        barPercentage: 1.6,
+        gridLines: {
+          drawBorder: false,
+          color: 'rgba(255,255,255,0.1)',
+          zeroLineColor: "transparent"
+        },
+        ticks: {
+          display: false,
+        }
+      }]
+    },
+  }
+});
+// Speed Chart
+var speedCanvas = document.getElementById("speedChart");
+
+var dataFirst = {
+  data: [0, 19, 15, 20, 30, 40, 40, 50, 25, 30, 50, 70],
+  fill: false,
+  borderColor: '#fbc658',
+  backgroundColor: 'transparent',
+  pointBorderColor: '#fbc658',
+  pointRadius: 4,
+  pointHoverRadius: 4,
+  pointBorderWidth: 8,
+};
+
+var dataSecond = {
+  data: [0, 5, 10, 12, 20, 27, 30, 34, 42, 45, 55, 63],
+  fill: false,
+  borderColor: '#51CACF',
+  backgroundColor: 'transparent',
+  pointBorderColor: '#51CACF',
+  pointRadius: 4,
+  pointHoverRadius: 4,
+  pointBorderWidth: 8
+};
+
+var speedData = {
+  labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+  datasets: [dataFirst, dataSecond]
+};
+
+var chartOptions = {
+  legend: {
+    display: false,
+    position: 'top'
+  }
+};
+
+var lineChart = new Chart(speedCanvas, {
+  type: 'line',
+  hover: false,
+  data: speedData,
+  options: chartOptions
+});
+    </script>
+    <script>
+     
+    </script>
+    <script>
+     
+
     </script>
   <script>
     $(document).ready(function() {
