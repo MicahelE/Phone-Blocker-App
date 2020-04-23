@@ -283,7 +283,7 @@ Coded by www.creative-tim.com
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <p class="card-category">{{$unblock}}</p>
-                      <p class="card-title">Blocked Users <p>
+                      <p class="card-title">Blocked <p>
                     </div>
                   </div>
                 </div>
@@ -309,7 +309,7 @@ Coded by www.creative-tim.com
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <p class="card-category">{{$block}}</p>
-                      <p class="card-title">Unblocked Users <p>
+                      <p class="card-title">Unblocked <p>
                     </div>
                   </div>
                 </div>

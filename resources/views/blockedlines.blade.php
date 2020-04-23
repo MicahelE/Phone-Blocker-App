@@ -406,7 +406,7 @@ Coded by www.creative-tim.com
                        <th style="white-space: nowrap; ">Phone 3 status</th>
                        <th>Network</th>
                        <th style="white-space: nowrap; ">Blocked By</th>
-                       <th style="white-space: nowrap; ">Updated At</th>
+                       <th >Updated At</th>
                        
                        {{-- <th>Actions</th> --}}
                       </tr>
@@ -423,11 +423,23 @@ Coded by www.creative-tim.com
                         <td>{{ $row->puk }}</td> --}}
                         <td>{{ $row->simno }}</td>
                         <td>{{ $row->phonetype1 }}</td>
-                        <td>{{$row->blockstatus}}</td>
+                        <td>@if ($row->blockstatus)
+                          Blocked
+                          @else 
+                          Unblocked
+                          @endif</td>
                         <td>{{ $row->phonetype2 }}</td>
-                        <td>{{$row->blockstatus2}}</td>
+                        <td>@if ($row->blockstatus2)
+                          Blocked
+                          @else 
+                          Unblocked
+                          @endif</td>
                         <td>{{ $row->phonetype3 }}</td>
-                        <td>{{$row->blockstatus3}}</td>
+                        <td>@if ($row->blockstatus3)
+                          Blocked
+                          @else 
+                          Unblocked
+                          @endif</td>
                         <td class="admin" >{{ $row->network }}</td>
                         <td class="admin" >Admin</td>
                         <td class="admin" >{{ $row->updated_at }}</td>
