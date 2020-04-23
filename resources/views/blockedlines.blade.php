@@ -406,7 +406,7 @@ Coded by www.creative-tim.com
                        <th style="white-space: nowrap; ">Phone 3 status</th>
                        <th>Network</th>
                        <th style="white-space: nowrap; ">Blocked By</th>
-                       <th >Updated At</th>
+                       <th style="white-space: nowrap; ">Updated At</th>
                        
                        {{-- <th>Actions</th> --}}
                       </tr>
