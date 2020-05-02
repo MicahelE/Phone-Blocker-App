@@ -258,7 +258,7 @@ Coded by www.creative-tim.com
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Total Users</p>
+                      <p class="card-category">Total <br>  Users</p>
                       <p class="card-title">{{$data}}<p>
                     </div>
                   </div>
@@ -286,7 +286,7 @@ Coded by www.creative-tim.com
                   <div class="col-7 col-md-8">
                     <div class="numbers">
                       <p class="card-category">SmartPhone Users </p>
-                      <p class="card-title">  <p>
+                      <p class="card-title">{{$data}}  <p>
                     </div>
                   </div>
                 </div>
@@ -337,7 +337,7 @@ Coded by www.creative-tim.com
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category ">Phone locked</p>
+                      <p class="card-category ">Phone <br>locked</p>
                       <p class="card-title"> {{$block}}<p><p> </p>
                     </div>
                   </div>
