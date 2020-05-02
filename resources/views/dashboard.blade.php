@@ -61,6 +61,8 @@ Coded by www.creative-tim.com
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
   <!-- Extra details for Live View on GitHub Pages -->
+  {{-- custom Stylesheet --}}
+  <link href="assets/css/style.css" rel="stylesheet" />
   <!-- Google Tag Manager -->
   <script>
     (function(w, d, s, l, i) {
@@ -256,8 +258,8 @@ Coded by www.creative-tim.com
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Total Users</p>
-                      <p class="card-title">{{$data}}<p>
+                      <p class="card-category">{{$data}}</p>
+                      <p class="card-title">Total Users<p>
                     </div>
                   </div>
                 </div>
@@ -283,8 +285,8 @@ Coded by www.creative-tim.com
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">SmartPhone Users</p>
-                      <p class="card-title"> <p>
+                      <p class="card-category">SmartPhone</p>
+                      <p class="card-title">  Users  <p><br>
                     </div>
                   </div>
                 </div>
@@ -309,8 +311,8 @@ Coded by www.creative-tim.com
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Phone unlocked</p>
-                      <p class="card-title">{{$unblock}} <p>
+                      <p class="card-category">{{$unblock}}</p>
+                      <p class="card-title"> Phone unlocked <p>
                     </div>
                   </div>
                 </div>
@@ -335,8 +337,8 @@ Coded by www.creative-tim.com
                   </div>
                   <div class="col-7 col-md-8">
                     <div class="numbers">
-                      <p class="card-category">Phone locked</p>
-                      <p class="card-title"> {{$block}}<p>
+                      <p class="card-category">{{$block}}</p>
+                      <p class="card-title">Phone locked <p>
                     </div>
                   </div>
                 </div>
@@ -412,14 +414,14 @@ Coded by www.creative-tim.com
               </div>
               <div class="card-footer ">
                 <div class="legend">
-                  <i class="fa fa-circle text-primary"></i> Active Users
-                  <i class="fa fa-circle text-warning"></i> Non Active
-                  <i class="fa fa-circle text-danger"></i> Removed
+                  <i class="fa fa-circle text-primary"></i> Gender
+                  <i class="fa fa-circle text-warning"></i> Age
+                  <i class="fa fa-circle text-danger"></i> Location
                   <i class="fa fa-circle text-gray"></i> Added
                 </div>
                 <hr>
                 <div class="stats">
-                  <i class="fa fa-calendar"></i> Numbers
+                  <i class="fa fa-calendar"></i> user data
                 </div>
               </div>
             </div>
