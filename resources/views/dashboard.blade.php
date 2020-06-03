@@ -22,7 +22,7 @@
                     class="navbar navbar-dark fixed-top align-items-start" style="height: 1348px;width: 224px;background-color: #33343af0;margin-top: 201px;">
                     <div class="container-fluid">
                         <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Smartphone Users</span></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li>
