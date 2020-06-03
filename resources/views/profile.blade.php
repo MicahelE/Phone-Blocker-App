@@ -1,833 +1,354 @@
-<!--
-=========================================================
-* Paper Dashboard 2 PRO - v2.1.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-dashboard-2-pro
-* Copyright 2020 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-
-<!-- Mirrored from demos.creative-tim.com/paper-dashboard-2-pro/examples/pages/user.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Apr 2020 11:40:41 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-   Phone Block App
-  </title>
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
-  <!-- Extra details for Live View on GitHub Pages -->
-  <!-- Canonical SEO -->
-  <link rel="canonical" href="https://www.creative-tim.com/product/paper-dashboard-2-pro" />
-  <!--  Social tags      -->
-  <meta name="keywords" content="creative tim, html dashboard, html css dashboard, web dashboard, bootstrap 4 dashboard, bootstrap 4, css3 dashboard, bootstrap 4 admin, paper dashboard bootstrap 4 dashboard, frontend, responsive bootstrap 4 dashboard, paper design, paper dashboard bootstrap 4 dashboard">
-  <meta name="description" content="Paper Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="name" content="Paper Dashboard PRO by Creative Tim">
-  <meta itemprop="description" content="Paper Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
-  <meta itemprop="image" content="../../../../s3.amazonaws.com/creativetim_bucket/products/84/opt_pd2p_thumbnail.jpg">
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="product">
-  <meta name="twitter:site" content="@creativetim">
-  <meta name="twitter:title" content="Paper Dashboard PRO by Creative Tim">
-  <meta name="twitter:description" content="Paper Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you.">
-  <meta name="twitter:creator" content="@creativetim">
-  <meta name="twitter:image" content="../../../../s3.amazonaws.com/creativetim_bucket/products/84/opt_pd2p_thumbnail.jpg">
-  <!-- Open Graph data -->
-  <meta property="fb:app_id" content="655968634437471">
-  <meta property="og:title" content="Paper Dashboard PRO by Creative Tim" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://creativetimofficial.github.io/paper-dashboard-2-pro/examples/dashboard.html" />
-  <meta property="og:image" content="../../../../s3.amazonaws.com/creativetim_bucket/products/84/opt_pd2p_thumbnail.jpg" />
-  <meta property="og:description" content="Paper Dashboard PRO is a beautiful Bootstrap 4 admin dashboard with a large number of components, designed to look beautiful, clean and organized. If you are looking for a tool to manage dates about your business, this dashboard is the thing for you." />
-  <meta property="og:site_name" content="Creative Tim" />
-  <!--     Fonts and icons     -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
-  <link href="../../../../maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-  <!-- CSS Files -->
-  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="../../assets/css/paper-dashboard.min1036.css?v=2.1.1" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../../assets/demo/demo.css" rel="stylesheet" />
-  <!-- Extra details for Live View on GitHub Pages -->
-  <!-- Google Tag Manager -->
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src =
-        '../../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-NKDMSK6');
-  </script>
-  <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Volak Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css?h=2c0fc24b3d3038317dc51c05339856d0">
+    <link rel="stylesheet" href="/assets/css/styles.min.css?h=37e5519e2d0203c617714852a76d0b4e">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
-<body class="">
-  <!-- Extra details for Live View on GitHub Pages -->
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <div class="wrapper ">
-    <div class="sidebar" data-color="default" data-active-color="danger">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color=" default | primary | info | success | warning | danger |"
-    -->
-    <div class="logo">
-      <a href="/dashboard" class="simple-text logo-mini">
-        <div class="logo-image-small">
-          <img src="../../assets/img/logo-small.png">
-        </div>
-        <!-- <p>CT</p> -->
-      </a>
-      <a href="/dashboard" class="simple-text logo-normal">
-        PHONE BLOCK APP
-        <!-- <div class="logo-image-big">
-          <img src="../../assets/img/logo-big.png">
-        </div> -->
-      </a>
-    </div>
-    <div class="sidebar-wrapper">
-      <div class="user">
-        <div class="photo">
-          <img src="../../assets/img/faces/ayo-ogunseinde-2.jpg" />
-        </div>
-        <div class="info">
-          <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-            <span>
-             Admin
-              <b class="caret"></b>
-            </span>
-          </a>
-          <div class="clearfix"></div>
-          <div class="collapse" id="collapseExample">
-            <ul class="nav">
-              <li>
-                <a href="#">
-                  <span class="sidebar-mini-icon">MP</span>
-                  <span class="sidebar-normal">My Profile</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="sidebar-mini-icon">EP</span>
-                  <span class="sidebar-normal">Edit Profile</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="sidebar-mini-icon">S</span>
-                  <span class="sidebar-normal">Settings</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <ul class="nav">
-        <li>
-          <a href="/dashboard">
-            <i class="nc-icon nc-bank"></i>
-            <p>Dashboard</p>
-          </a>
-        </li>
-        <li>
-          <a  href="/datatable">
-            <i class="nc-icon nc-book-bookmark"></i>
-            <p>
-              Datatable <b class=""></b>
-            </p>
-          </a>
-         
-        </li>
-        
-      </ul>
-    </div>
-    </div>
-    <div class="main-panel">
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
-        <div class="container-fluid">
-          <div class="navbar-wrapper">
-            <div class="navbar-minimize">
-              <button id="minimizeSidebar" class="btn btn-icon btn-round">
-                <i class="nc-icon nc-minimal-right text-center visible-on-sidebar-mini"></i>
-                <i class="nc-icon nc-minimal-left text-center visible-on-sidebar-regular"></i>
-              </button>
-            </div>
-            <div class="navbar-toggle">
-              <button type="button" class="navbar-toggler">
-                <span class="navbar-toggler-bar bar1"></span>
-                <span class="navbar-toggler-bar bar2"></span>
-                <span class="navbar-toggler-bar bar3"></span>
-              </button>
-            </div>
-            <a class="navbar-brand" href="javascript:;">
-              PHONE BLOCK APP</a>
-          </div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navigation">
-            <form>
-              <div class="input-group no-border">
-                <input type="text" value="" class="form-control" placeholder="Search...">
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <i class="nc-icon nc-zoom-split"></i>
-                  </div>
-                </div>
-              </div>
-            </form>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link btn-magnify" href="javascript:;">
-                  <i class="nc-icon nc-layout-11"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Stats</span>
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item btn-rotate dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com/" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <i class="nc-icon nc-bell-55"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Some Actions</span>
-                  </p>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn-rotate" href="javascript:;">
-                  <i class="nc-icon nc-settings-gear-65"></i>
-                  <p>
-                    <span class="d-lg-none d-md-block">Account</span>
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- End Navbar -->
-      <div class="content">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card card-user">
-              <div class="image">
-                <img src="../../assets/img/bg/damir-bosnjak.jpg" alt="...">
-              </div>
-              <div class="card-body">
-                <div class="author">
-                  <a href="#">
-                    <img class="avatar border-gray" src="../../assets/img/mike.jpg" alt="...">
-                    <h5 class="title">{{ $profile->name }}</h5>
-                  </a>
-                  <p class="description">
-                    @ {{ $profile->name }}
-                  </p>
-                </div>
-                {{-- <p class="description text-center">
-                  "I like the way you work it <br>
-                  No diggity <br>
-                  I wanna bag it up"
-                </p> --}}
-              </div>
-              <div class="card-footer">
-                <hr>
-                <div class="button-container">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-6 col-6 ml-auto">
-                      {{-- <h5>12<br><small>Files</small></h5> --}}
+<body style="background-color: #d7d9e0;">
+    <nav class="navbar navbar-light navbar-expand" style="width: 1050px;height: 70px;margin: 0px 0px 24px;padding: 8px 16px;margin-left: 224px;background-color: #ffffff;">
+        <div class="container-fluid"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation" style="width: 80px;height: 60px;background-image: url(&quot;/assets/img/logo-dash.png?h=33bb4bfd43d8957890b0d68275e30a48&quot;);">
+                        <div></div>
+                    </li>
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"></li>
+                </ul><a class="navbar-brand text-center d-flex justify-content-center align-items-center" href="#" style="width: 239px;margin-left: -87px;font-size: 14px;font-family: century gothic;">Volak Resources</a>
+                <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                    <div class="input-group"><input class="bg-light border-light form-control border-0 small" type="text" placeholder="Search for ..." style="width: 316px;background-color: rgb(253,254,255);font-size: 12px;font-family: century gothic;">
+                        <div class="input-group-append"><button class="btn btn-primary py-0" type="button" style="background-color: rgb(95,102,109);"><i class="fas fa-search"></i></button></div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
-                      {{-- <h5>2GB<br><small>Used</small></h5> --}}
-                    </div>
-                    <div class="col-lg-3 mr-auto">
-                      {{-- <h5>24,6$<br><small>Spent</small></h5> --}}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {{-- <div class="card">
-              <div class="card-header">
-                <h4 class="card-title">Team Members</h4>
-              </div>
-              <div class="card-body">
-                <ul class="list-unstyled team-members">
-                  <li>
-                    <div class="row">
-                      <div class="col-md-2 col-2">
-                        <div class="avatar">
-                          <img src="../../assets/img/faces/ayo-ogunseinde-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                        </div>
-                      </div>
-                      <div class="col-md-7 col-7">
-                        DJ Khaled
-                        <br />
-                        <span class="text-muted"><small>Offline</small></span>
-                      </div>
-                      <div class="col-md-3 col-3 text-right">
-                        <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md-2 col-2">
-                        <div class="avatar">
-                          <img src="../../assets/img/faces/joe-gardner-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                        </div>
-                      </div>
-                      <div class="col-md-7 col-7">
-                        Creative Tim
-                        <br />
-                        <span class="text-success"><small>Available</small></span>
-                      </div>
-                      <div class="col-md-3 col-3 text-right">
-                        <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="row">
-                      <div class="col-md-2 col-2">
-                        <div class="avatar">
-                          <img src="../../assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
-                        </div>
-                      </div>
-                      <div class="col-ms-7 col-7">
-                        Flume
-                        <br />
-                        <span class="text-danger"><small>Busy</small></span>
-                      </div>
-                      <div class="col-md-3 col-3 text-right">
-                        <btn class="btn btn-sm btn-outline-success btn-round btn-icon"><i class="fa fa-envelope"></i></btn>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div> --}}
-          </div>
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">
-                <h5 class="title">Edit Profile</h5>
-              </div>
-              <div class="card-body">
- 
-                <form>
-                  {{-- <div class="row">
-                    <div class="col-md-5 pr-1">
-                      <div class="form-group">
-                        <label>Company (disabled)</label>
-                        <input type="text" class="form-control" disabled="" placeholder="Company" value="Creative Code Inc.">
-                      </div>
-                    </div>
-                    <div class="col-md-3 px-1">
-                      <div class="form-group">
-                        <label>Username</label>
-                        <input type="text" class="form-control" placeholder="Username" value="michael23">
-                      </div>
-                    </div>
-                    <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" placeholder="Email">
-                      </div>
-                    </div>
-                  </div> --}}
-                  <div class="row">
-                    <div class="col-md-6 pr-1">
-                      <div class="form-group">
-                        <label>First Name</label>
-                        <input type="text" class="form-control" placeholder="Company" value="{{ $profile->name }}">
-                      </div>
-                    </div>
-                    <div class="col-md-6 pl-1">
-                      <div class="form-group">
-                        <label> No</label>
-                        <input type="text" class="form-control" placeholder="no" value="{{ $profile->phonenumber }}">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Address</label>
-                        <input type="text" class="form-control" placeholder="Home Address" value="{{ $profile->address }}">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4 pr-1">
-                      <div class="form-group">
-                        <label>LGA</label>
-                        <input type="text" class="form-control" placeholder="LGA" value="{{ $profile->lga }}">
-                      </div>
-                    </div>
-                    <div class="col-md-4 px-1">
-                      <div class="form-group">
-                        <label>DATE OF BIRTH</label>
-                        <input type="text" class="form-control" placeholder="" value="{{ $profile->dob }}">
-                      </div>
-                    </div>
-                    <div class="col-md-4 pl-1">
-                      <div class="form-group">
-                        <label> NIN </label>
-                        <input type="number" class="form-control" placeholder="{{ $profile->nin }}">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <label>Moms maiden name</label>
-                        <textarea rows="4" cols="80" class="form-control textarea">{{ $profile->momname }}</textarea>
-                      </div>
-                    </div>
-                  </div>
                 </form>
-                <form action="{{route('block',$profile->id)}}" class="form-horizontal" method="POST">
-                  {{ csrf_field() }}
-                  <fieldset>
-                  
-                  <!-- Form Name -->
-                  <legend>Phones connected to this user</legend>
-                  
-                  <!-- Select Basic -->
-                  {{-- <div class="form-group">
-                    <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
-                    <div class="col-md-4">
-                      <select id="selectbasic" name="selectbasic" class="form-control">
-                        <option value="1">Option one</option>
-                        <option value="2">Option two</option>
-                      </select>
+                <ul class="nav navbar-nav flex-nowrap ml-auto" style="margin-left: 5px;">
+                    <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                        <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" role="menu" aria-labelledby="searchDropdown">
+                            <form class="form-inline mr-auto navbar-search w-100">
+                                <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                    <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter">3+</span><i class="fas fa-bell fa-fw"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                role="menu">
+                                <h6 class="dropdown-header">alerts center</h6>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="mr-3">
+                                        <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">December 12, 2019</span>
+                                        <p>A new monthly report is ready to download!</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="mr-3">
+                                        <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">December 7, 2019</span>
+                                        <p>$290.29 has been deposited into your account!</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="mr-3">
+                                        <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                    </div>
+                                    <div><span class="small text-gray-500">December 2, 2019</span>
+                                        <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                    </div>
+                                </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1" role="presentation">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="width: -7px;"><i class="fas fa-envelope fa-fw"></i><span class="badge badge-danger badge-counter">7</span></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-list dropdown-menu-right animated--grow-in"
+                                role="menu">
+                                <h6 class="dropdown-header">alerts center</h6>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="/assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5">
+                                        <div class="bg-success status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
+                                        <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
+                                        <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="/assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3">
+                                        <div class="bg-warning status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
+                                        <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                    </div>
+                                </a>
+                                <a class="d-flex align-items-center dropdown-item" href="#">
+                                    <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="/assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea">
+                                        <div class="bg-success status-indicator"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
+                                        <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                    </div>
+                                </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                        </div>
+                        <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                    </li>
+                    <div class="d-none d-sm-block topbar-divider"></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" style="margin-left: 258px;padding: -12px;width: 963px;background-color: rgba(239,238,238,0);">
+        <h3 class="text-dark mb-4" style="font-family: century gothic;">Subscriber Information</h3>
+        <div class="row mb-3">
+            <div class="col-lg-4" style="height: 745px;width: 279px;padding-right: 0px;padding-left: 17px;">
+                <div class="card mb-3" style="width: 281px;">
+                    <div class="card-body text-center shadow">
+                        <!-- Start: avatars/avatar1.jpeg --><img class="rounded-circle mb-3 mt-4" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656" width="160" height="160">
+                        <!-- End: avatars/avatar1.jpeg -->
+                        <div class="mb-3"></div>
                     </div>
-                  </div> --}}
-                  <div>
-                    <select name="blockstatus">
-                        <option>Choose Phone</option>
-                        <option value="blockstatus">Phonetype1</option>
-                        <option value="blockstatus2">Phonetype2</option>
-                        <option value="blockstatus3">Phonetype3</option>
-                    </select>
                 </div>
-                <div class="blockstatus box text-center"><strong> @if (!($profile->phonetype1 == "") ) {{$profile->phonetype1}} and it is {{ $profile->blockstatus ? 'Blocked' : 'Unblocked' }} from all networks @else Not Available @endif  </strong></div>
-                <div class="blockstatus2 box text-center"><strong> @if (!($profile->phonetype2 == "")) {{$profile->phonetype2}} and it is {{ $profile->blockstatus2 ? 'Blocked' : 'Unblocked' }} from all networks @else Not Available @endif </strong></div>
-                <div class="blockstatus3 box text-center"><strong> @if (!($profile->phonetype3 == "")) {{$profile->phonetype3}} and it is {{ $profile->blockstatus3 ? 'Blocked' : 'Unblocked' }} from all networks @else Not Available @endif </strong></div>
-                  {{-- <input type="submit"> --}}
-                  </fieldset>
-                  <br><br><br><br>
-                  
-                <button type="submit" class="btn btn-primary btn-block" onclick="$('#block').removeAttr('hidden'); "><b>Block/Unblock</b></button>
-              </form>
-              <b id ="block" hidden >Unblocking/Blocking...<i class="fas fa-spinner fa-spin"> </i></b>
-              </div>
+                <div class="card shadow mb-4" style="width: 280px;"></div>
             </div>
-          </div>
-        </div>
-      </div>
-      <footer class="footer footer-black  footer-white ">
-        <div class="container-fluid">
-         
-        </div>
-      </footer>
-    </div>
-  </div>
-  <div class="fixed-plugin">
-    <div class="dropdown show-dropdown">
-      <a href="#" data-toggle="dropdown">
-        <i class="fa fa-cog fa-2x"> </i>
-      </a>
-      <ul class="dropdown-menu">
-        <li class="header-title"> Sidebar Background</li>
-        <li class="adjustments-line">
-          <a href="javascript:void(0)" class="switch-trigger background-color">
-            <div class="badge-colors text-center">
-              <span class="badge filter badge-default active" data-color="default"></span>
-              <span class="badge filter badge-light" data-color="white"></span>
+            <div class="col-lg-8" style="width: 400px;margin-left: -18px;">
+                <div class="row mb-3 d-none">
+                    <div class="col">
+                        <div class="card text-white bg-primary shadow">
+                            <div class="card-body">
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <p class="m-0">Peformance</p>
+                                        <p class="m-0"><strong>65.2%</strong></p>
+                                    </div>
+                                    <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                </div>
+                                <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-white bg-success shadow">
+                            <div class="card-body">
+                                <div class="row mb-2">
+                                    <div class="col">
+                                        <p class="m-0">Peformance</p>
+                                        <p class="m-0"><strong>65.2%</strong></p>
+                                    </div>
+                                    <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                </div>
+                                <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="margin-left: 22px;">
+                        <div class="card shadow mb-3">
+                            <div class="card-header py-3">
+                                <p class="m-0 font-weight-bold" style="color: rgb(32,97,149);font-family: century gothic;font-weight: normal;">PERSONAL INFORMATION</p>
+                            </div>
+                            <div class="card-body" style="height: 348px;">
+                                @php
+                                   $fullname = explode(" ", $profile->name); 
+                                @endphp
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="username"><strong>First Name</strong><br></label><input class="form-control" type="text" value="{{ $fullname[0] }}" name="username"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="first_name"><strong>Last Name</strong></label><input class="form-control" type="text" value="{{ $fullname[1] }}" name="first_name"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="username"><strong>Middle Name</strong><br></label><input class="form-control" type="text" value="{{ $profile->midname }}" name="username"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="first_name"><strong>Date of Birth</strong><br></label><input class="form-control" type="text" value="{{ $profile->dob }}" name="first_name"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="first_name"><strong>NIN</strong><br></label><input class="form-control" type="text" value="{{ $profile->nin }}" name="first_name"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group"><label for="email"><strong>Email Address</strong></label><input class="form-control" type="email" value="{{ $profile->email }}" name="email"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="first_name"><strong>Gender</strong><br></label><input class="form-control" type="text" value="{{ $profile->gender }}" name="first_name"></div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group"><label for="first_name"><strong>Mothers Maiden Name</strong><br></label><input class="form-control" type="text" value="{{ $profile->momname }}" name="first_name"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgba(0,123,255,0.59);">Update</button></div>
+                            </div>
+                        </div>
+                        <div class="card shadow">
+                            <div class="card-header py-3" style="color: #212529;">
+                                <p class="m-0 font-weight-bold" style="color: rgb(32,97,149);font-family: century gothic;font-weight: normal;">ADDRESS INFORMATION</p>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group"><label for="address"><strong>Address</strong></label><input class="form-control" type="text" value="{{ $profile->address }}" name="address"></div>
+                                    <div class="form-row">
+                                        <div class="col" style="width: 446px;">
+                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>City</strong><br></label><input class="form-control" type="text" value="{{ $profile->lga }}" name="city"></div>
+                                        </div>
+                                        <div class="col" style="width: 446px;">
+                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>L.G.A</strong><br></label><input class="form-control" type="text" value="{{ $profile->lga }}" name="city"></div>
+                                        </div>
+                                        <div class="col" style="width: 446px;">
+                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>State</strong><br></label><input class="form-control" type="text" value="{{ $profile->state }}" name="city"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgba(0,123,255,0.59);">Update</button></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="clearfix"></div>
-          </a>
-        </li>
-        <li class="header-title"> Sidebar Active Color</li>
-        <li class="adjustments-line text-center">
-          <a href="javascript:void(0)" class="switch-trigger active-color">
-            <span class="badge filter badge-primary" data-color="primary"></span>
-            <span class="badge filter badge-info" data-color="info"></span>
-            <span class="badge filter badge-success" data-color="success"></span>
-            <span class="badge filter badge-warning" data-color="warning"></span>
-            <span class="badge filter badge-danger active" data-color="danger"></span>
-          </a>
-        </li>
-        <li class="header-title">
-          Sidebar Mini
-        </li>
-        <li class="adjustments-line">
-          <div class="togglebutton switch-sidebar-mini">
-            <label class="switch-mini">
-              <input class="bootstrap-switch" type="checkbox" data-toggle="switch" data-on-color="info" data-off-color="info" data-on-label="ON" data-off-label="OFF">
-              <span class="toggle"></span>
-            </label>
-          </div>
-        </li>
-        <li class="button-container">
-          <a href="https://www.creative-tim.com/product/paper-dashboard-2-pro" target="_blank" class="btn btn-primary btn-block btn-round">Buy Now</a>
-          <a href="https://demos.creative-tim.com/paper-dashboard-2-pro/docs/1.0/getting-started/introduction.html" target="_blank" class="btn btn-default btn-block btn-round">
-            <i class="nc-icon nc-paper"></i>
-            Documentation
-          </a>
-          <a href="https://www.creative-tim.com/product/paper-dashboard-2" target="_blank" class="btn btn-info btn-block btn-round">
-            <i class="nc-icon nc-laptop"></i>
-            Get Free Demo!
-          </a>
-        </li>
-        <li class="header-title">Thank you for 95 shares!</li>
-        <li class="button-container text-center">
-          <button id="twitter" class="btn btn-round btn-twitter"><i class="fa fa-twitter"></i> &middot; 45</button>
-          <button id="facebook" class="btn btn-round btn-facebook"><i class="fa fa-facebook-f"></i> &middot; 50</button>
-          <br>
-          <br>
-          <a class="github-button" href="https://github.com/creativetimofficial/ct-paper-dashboard-2-pro" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-        </li>
-      </ul>
+        </div>
+        <div class="card shadow" style="margin-top: 16px;">
+            <div class="card-header py-3">
+                <p class="m-0 font-weight-bold" style="color: rgb(32,97,149);font-family: century gothic;font-weight: normal;">PHONES CONNECTED TO THIS USER</p>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="table-responsive table mt-2" id="dataTable-1" role="grid" aria-describedby="dataTable_info">
+                        <table class="table my-0" id="dataTable">
+                            <thead>
+                                <tr>
+                                    <th>S/N</th>
+                                    <th>Phone Number</th>
+                                    <th>Network</th>
+                                    <th>Line Type</th>
+                                    <th>Model</th>
+                                    <th>Smartphone</th>
+                                    <th>IMEI No.</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><form action="{{route('block',$profile->id)}}"  method="POST">
+                                    <td>1</td>
+                                    <td>{{ $profile->phonenumber }}</td>
+                                    <td>glo</td>
+                                    <td>Private</td>
+                                    <td>{{ $profile->phonetype2}}</td>
+                                    <td>Yes</td>
+                                    <td>1234567890</td>
+                                    <td>Active</td>
+                                    <td><button class="btn btn-primary" type="button" style="background-color: rgba(0,123,255,0.59);">Block Phone</button></td>
+                                </form>
+                                </tr>
+                                <tr>
+                                    <form action="{{route('block',$profile->id)}}"  method="POST">
+                                    <td>2</td>
+                                    <td>07068974898</td>
+                                    <td>mtn</td>
+                                    <td>Private</td>
+                                    <td>{{ $profile->phonetype2}}</td>
+                                    <td>Yes</td>
+                                    <td>2008767862<br></td>
+                                    <td>Active</td>
+                                    <td><button class="btn btn-primary" type="button" style="background-color: rgba(0,123,255,0.59);">Block Phone</button></td>
+                                    </form>
+                                </tr>
+                                <tr>
+                                    <form action="{{route('block',$profile->id)}}"  method="POST">
+                                    <td>3</td>
+                                    <td>08107897867</td>
+                                    <td>airtel</td>
+                                    <td>Business</td>
+                                    <td>{{ $profile->phonetype3}}</td>
+                                    <td>No</td>
+                                    <td>3322432659</td>
+                                    <td>Active</td>
+                                    <td><button class="btn btn-primary" type="button" style="background-color: rgba(0,123,255,0.59);">Block Phone</button></td>
+                                    </form>
+                                </tr>
+                                <tr><form action="{{route('block',$profile->id)}}"  method="POST">
+                                    <td style="color: rgb(230,33,33);">4</td>
+                                    <td style="color: rgb(230,33,33);">N/A</td>
+                                    <td style="color: rgb(230,33,33);">N/A</td>
+                                    <td style="color: rgb(230,33,33);">N/A</td>
+                                    <td style="color: rgb(230,33,33);">N/A</td>
+                                    <td style="color: rgb(230,33,33);">N/A</td>
+                                    <td style="color: rgb(230,33,33);">N/A</td>
+                                    <td style="color: rgb(230,33,33);">N/A</td>
+                                    <td><button class="btn btn-danger" type="submit" style="background-color: rgba(220,53,69,0.76);">Notify Network</button></td>
+                                    </form>
+                                </tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                                <tr></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group"><button class="btn btn-primary btn-sm" type="submit">Update</button></div>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
-  <!--   Core JS Files   -->
-  <script src="../../assets/js/core/jquery.min.js"></script>
-  <script src="../../assets/js/core/popper.min.js"></script>
-  <script src="../../assets/js/core/bootstrap.min.js"></script>
-  <script src="../../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
-  <script src="../../assets/js/plugins/moment.min.js"></script>
-  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-  <script src="../../assets/js/plugins/bootstrap-switch.js"></script>
-  <!--  Plugin for Sweet Alert -->
-  <script src="../../assets/js/plugins/sweetalert2.min.js"></script>
-  <!-- Forms Validations Plugin -->
-  <script src="../../assets/js/plugins/jquery.validate.min.js"></script>
-  <!--  Plugin for the Wizard, full documentation here: https://github.com/VinceG/twitter-bootstrap-wizard -->
-  <script src="../../assets/js/plugins/jquery.bootstrap-wizard.js"></script>
-  <!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-  <script src="../../assets/js/plugins/bootstrap-selectpicker.js"></script>
-  <!--  Plugin for the DateTimePicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
-  <script src="../../assets/js/plugins/bootstrap-datetimepicker.js"></script>
-  <!--  DataTables.net Plugin, full documentation here: https://datatables.net/    -->
-  <script src="../../assets/js/plugins/jquery.dataTables.min.js"></script>
-  <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
-  <script src="../../assets/js/plugins/bootstrap-tagsinput.js"></script>
-  <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
-  <script src="../../assets/js/plugins/jasny-bootstrap.min.js"></script>
-  <!--  Full Calendar Plugin, full documentation here: https://github.com/fullcalendar/fullcalendar    -->
-  <script src="../../assets/js/plugins/fullcalendar/fullcalendar.min.js"></script>
-  <script src="../../assets/js/plugins/fullcalendar/daygrid.min.js"></script>
-  <script src="../../assets/js/plugins/fullcalendar/timegrid.min.js"></script>
-  <script src="../../assets/js/plugins/fullcalendar/interaction.min.js"></script>
-  <!-- Vector Map plugin, full documentation here: http://jvectormap.com/documentation/ -->
-  <script src="../../assets/js/plugins/jquery-jvectormap.js"></script>
-  <!--  Plugin for the Bootstrap Table -->
-  <script src="../../assets/js/plugins/nouislider.min.js"></script>
-  <!--  Google Maps Plugin    -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2Yno10-YTnLjjn_Vtk0V8cdcY5lC4plU"></script>
-  <!-- Place this tag in your head or just before your close body tag. -->
-  <script async defer src="../../../../buttons.github.io/buttons.js"></script>
-  <!-- Chart JS -->
-  <script src="../../assets/js/plugins/chartjs.min.js"></script>
-  <!--  Notifications Plugin    -->
-  <script src="../../assets/js/plugins/bootstrap-notify.js"></script>
-  <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
-  <script src="../../assets/js/paper-dashboard.min1036.js?v=2.1.1" type="text/javascript"></script><!-- Paper Dashboard DEMO methods, don't include it in your project! -->
-  <script src="../../assets/demo/demo.js"></script>
-  <!-- Sharrre libray -->
-  <script src="../../assets/demo/jquery.sharrre.js"></script>
-  <script>
-    $(document).ready(function() {
-
-
-      $('#facebook').sharrre({
-        share: {
-          facebook: true
-        },
-        enableHover: false,
-        enableTracking: false,
-        enableCounter: false,
-        click: function(api, options) {
-          api.simulateClick();
-          api.openPopup('facebook');
-        },
-        template: '<i class="fab fa-facebook-f"></i> Facebook',
-        url: 'https://demos.creative-tim.com/paper-dashboard-pro/examples/dashboard.html'
-      });
-
-      $('#google').sharrre({
-        share: {
-          googlePlus: true
-        },
-        enableCounter: false,
-        enableHover: false,
-        enableTracking: true,
-        click: function(api, options) {
-          api.simulateClick();
-          api.openPopup('googlePlus');
-        },
-        template: '<i class="fab fa-google-plus"></i> Google',
-        url: 'https://demos.creative-tim.com/paper-dashboard-pro/examples/dashboard.html'
-      });
-
-      $('#twitter').sharrre({
-        share: {
-          twitter: true
-        },
-        enableHover: false,
-        enableTracking: false,
-        enableCounter: false,
-        buttons: {
-          twitter: {
-            via: 'CreativeTim'
-          }
-        },
-        click: function(api, options) {
-          api.simulateClick();
-          api.openPopup('twitter');
-        },
-        template: '<i class="fab fa-twitter"></i> Twitter',
-        url: 'https://demos.creative-tim.com/paper-dashboard-pro/examples/dashboard.html'
-      });
-
-
-
-      // Facebook Pixel Code Don't Delete
-      ! function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-          n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-      }(window,
-        document, 'script', '../../../../connect.facebook.net/en_US/fbevents.js');
-
-      try {
-        fbq('init', '111649226022273');
-        fbq('track', "PageView");
-
-      } catch (err) {
-        console.log('Facebook Track Error:', err);
-      }
-
-    });
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&amp;ev=PageView&amp;noscript=1" />
-  </noscript>
-  <script>
-    $(document).ready(function() {
-
-      $sidebar = $('.sidebar');
-      $sidebar_img_container = $sidebar.find('.sidebar-background');
-
-      $full_page = $('.full-page');
-
-      $sidebar_responsive = $('body > .navbar-collapse');
-      sidebar_mini_active = false;
-
-      window_width = $(window).width();
-
-      fixed_plugin_open = $('.sidebar .sidebar-wrapper .nav li.active a p').html();
-
-      // if( window_width > 767 && fixed_plugin_open == 'Dashboard' ){
-      //     if($('.fixed-plugin .dropdown').hasClass('show-dropdown')){
-      //         $('.fixed-plugin .dropdown').addClass('show');
-      //     }
-      //
-      // }
-
-      $('.fixed-plugin a').click(function(event) {
-        // Alex if we click on switch, stop propagation of the event, so the dropdown will not be hide, otherwise we set the  section active
-        if ($(this).hasClass('switch-trigger')) {
-          if (event.stopPropagation) {
-            event.stopPropagation();
-          } else if (window.event) {
-            window.event.cancelBubble = true;
-          }
-        }
-      });
-
-      $('.fixed-plugin .active-color span').click(function() {
-        $full_page_background = $('.full-page-background');
-
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-
-        var new_color = $(this).data('color');
-
-        if ($sidebar.length != 0) {
-          $sidebar.attr('data-active-color', new_color);
-        }
-
-        if ($full_page.length != 0) {
-          $full_page.attr('data-active-color', new_color);
-        }
-
-        if ($sidebar_responsive.length != 0) {
-          $sidebar_responsive.attr('data-active-color', new_color);
-        }
-      });
-
-      $('.fixed-plugin .background-color span').click(function() {
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-
-        var new_color = $(this).data('color');
-
-        if ($sidebar.length != 0) {
-          $sidebar.attr('data-color', new_color);
-        }
-
-        if ($full_page.length != 0) {
-          $full_page.attr('filter-color', new_color);
-        }
-
-        if ($sidebar_responsive.length != 0) {
-          $sidebar_responsive.attr('data-color', new_color);
-        }
-      });
-
-      $('.fixed-plugin .img-holder').click(function() {
-        $full_page_background = $('.full-page-background');
-
-        $(this).parent('li').siblings().removeClass('active');
-        $(this).parent('li').addClass('active');
-
-
-        var new_image = $(this).find("img").attr('src');
-
-        if ($sidebar_img_container.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-          $sidebar_img_container.fadeOut('fast', function() {
-            $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-            $sidebar_img_container.fadeIn('fast');
-          });
-        }
-
-        if ($full_page_background.length != 0 && $('.switch-sidebar-image input:checked').length != 0) {
-          var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
-
-          $full_page_background.fadeOut('fast', function() {
-            $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-            $full_page_background.fadeIn('fast');
-          });
-        }
-
-        if ($('.switch-sidebar-image input:checked').length == 0) {
-          var new_image = $('.fixed-plugin li.active .img-holder').find("img").attr('src');
-          var new_image_full_page = $('.fixed-plugin li.active .img-holder').find('img').data('src');
-
-          $sidebar_img_container.css('background-image', 'url("' + new_image + '")');
-          $full_page_background.css('background-image', 'url("' + new_image_full_page + '")');
-        }
-
-        if ($sidebar_responsive.length != 0) {
-          $sidebar_responsive.css('background-image', 'url("' + new_image + '")');
-        }
-      });
-
-      $('.switch-sidebar-image input').on("switchChange.bootstrapSwitch", function() {
-        $full_page_background = $('.full-page-background');
-
-        $input = $(this);
-
-        if ($input.is(':checked')) {
-          if ($sidebar_img_container.length != 0) {
-            $sidebar_img_container.fadeIn('fast');
-            $sidebar.attr('data-image', '#');
-          }
-
-          if ($full_page_background.length != 0) {
-            $full_page_background.fadeIn('fast');
-            $full_page.attr('data-image', '#');
-          }
-
-          background_image = true;
-        } else {
-          if ($sidebar_img_container.length != 0) {
-            $sidebar.removeAttr('data-image');
-            $sidebar_img_container.fadeOut('fast');
-          }
-
-          if ($full_page_background.length != 0) {
-            $full_page.removeAttr('data-image', '#');
-            $full_page_background.fadeOut('fast');
-          }
-
-          background_image = false;
-        }
-      });
-
-
-      $('.switch-mini input').on("switchChange.bootstrapSwitch", function() {
-        $body = $('body');
-
-        $input = $(this);
-
-        if (paperDashboard.misc.sidebar_mini_active == true) {
-          $('body').removeClass('sidebar-mini');
-          paperDashboard.misc.sidebar_mini_active = false;
-        } else {
-          $('body').addClass('sidebar-mini');
-          paperDashboard.misc.sidebar_mini_active = true;
-        }
-
-        // we simulate the window Resize so the charts will get updated in realtime.
-        var simulateWindowResize = setInterval(function() {
-          window.dispatchEvent(new Event('resize'));
-        }, 180);
-
-        // we stop the simulation of Window Resize after the animations are completed
-        setTimeout(function() {
-          clearInterval(simulateWindowResize);
-        }, 1000);
-
-      });
-
-    });
-  </script>
+    <div>
+        <nav class="navbar navbar-dark fixed-top align-items-start" style="height: 200px;width: 224px;background-color: #6f6f74;background-repeat: no-repeat;">
+            <div class="container-fluid"><a href="#"><img class="border rounded-circle img-profile" src="/assets/img/Layer18.png?h=ffbc199f65eded4a1f743b6df8395df3" style="margin-left: 23px;margin-top: 40px;width: 100px;height: 100px;background-color: #fefdfd;background-repeat: no-repeat;background-size: cover;"><span style="color: rgb(252,253,254);margin-left: 20px;margin-bottom: 0px;margin-top: 0px;">Aribisala Helen</span></a>
+                <nav
+                    class="navbar navbar-dark fixed-top align-items-start" style="height: 1348px;width: 224px;background-color: #33343af0;margin-top: 201px;background-size: cover;">
+                    <div class="container-fluid">
+                      <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Smartphone Users</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phones</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/blockedlines"><span>Flagged Subscribers</span></a></li>
+                    </ul>
+                    </div>
+        </nav>
+        </div>
+        </nav>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="/assets/js/script.min.js?h=c36e815cffc23831d7329b951063bde2"></script>
 </body>
 
-
-<!-- Mirrored from demos.creative-tim.com/paper-dashboard-2-pro/examples/pages/user.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Apr 2020 11:40:43 GMT -->
 </html>
