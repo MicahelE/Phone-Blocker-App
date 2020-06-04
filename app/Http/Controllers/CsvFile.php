@@ -48,10 +48,23 @@ class CsvFile extends Controller
     }
 
 
-    public function update($id)
+    public function update(Request $request,$id)
     { 
         $user= Phoneuser::find($id);
-        $user->update(['blockstatus' => !$user->blockstatus]);
+        // $user= Phoneuser::find($id);
+        $user->name= $request->input('username').' '.$request->input('first_name');
+        $user->midname=$request->input('midname');
+        $user->dob=$request->input('dob');
+        $user->gender=$request->input('gender');
+        $user->momname=$request->input('momname');
+        $user->email=$request->input('email');
+        $user->nin=$request->input('nin');
+        $user->address=$request->input('address');
+        $user->lga=$request->input('lga');
+        $user->city=$request->input('city');
+        $user->state=$request->input('state');
+        // $user->update(['blockstatus' => !$user->blockstatus]);
+        $user->save();
         return back();
     }
 

@@ -152,7 +152,7 @@
                                 <table class="table my-0" id="example1">
                                     <thead>
                                         <tr>
-                                            <th style="width: 141px;">Full Name</th>
+                                            <th style="width: 241px;">Full Name</th>
                                             <th style="width: 123px;">Gender</th>
                                             <th>Date of Birth</th>
                                             <th>NIN</th>
@@ -195,7 +195,7 @@
                                           $no= rand(1,22);
                                       @endphp
                   <tr data-id={{$row->id}}>  
-                  <td><img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/collection/2504190/30x30?sig={{$no}}"><a style="color: black;" href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
+                  <td>@if ( $row->gender=='Male' )<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/EQFtEzJGERg"> @else<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/g0pb9aXpbgQ"> @endif<a style="color: black;" href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
                                       <td>{{ $row->gender }}</td>
                                       <td>{{ $row->dob }}</td>
                                       <td>{{ $row->nin }}</td>

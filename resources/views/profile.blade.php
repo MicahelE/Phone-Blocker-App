@@ -126,7 +126,14 @@
             <div class="col-lg-4" style="height: 745px;width: 279px;padding-right: 0px;padding-left: 17px;">
                 <div class="card mb-3" style="width: 281px;">
                     <div class="card-body text-center shadow">
-                        <!-- Start: avatars/avatar1.jpeg --><img class="rounded-circle mb-3 mt-4" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656" width="160" height="160">
+                        @php
+                        $no= rand(1,22);
+                    @endphp
+                        <!-- Start: avatars/avatar1.jpeg --> @if ( $profile->gender=='Male' )
+                        <img class="rounded-circle mb-3 mt-4" src="https://source.unsplash.com/EQFtEzJGERg" width="160" height="160">
+                        @else
+                        <img class="rounded-circle mb-3 mt-4" src="https://source.unsplash.com/g0pb9aXpbgQ" width="160" height="160"> 
+                        @endif 
                         <!-- End: avatars/avatar1.jpeg -->
                         <div class="mb-3"></div>
                     </div>
@@ -174,7 +181,7 @@
                                 @php
                                    $fullname = explode(" ", $profile->name); 
                                 @endphp
-                                <form>
+                                <form  action="{{route('update',$profile->id)}}"  method="GET">
                                     <div class="form-row">
                                         <div class="col">
                                             <div class="form-group"><label for="username"><strong>First Name</strong><br></label><input class="form-control" type="text" value="{{ $fullname[0] }}" name="username"></div>
@@ -185,13 +192,13 @@
                                     </div>
                                     <div class="form-row">
                                         <div class="col">
-                                            <div class="form-group"><label for="username"><strong>Middle Name</strong><br></label><input class="form-control" type="text" value="{{ $profile->midname }}" name="username"></div>
+                                            <div class="form-group"><label for="username"><strong>Middle Name</strong><br></label><input class="form-control" type="text" value="{{ $profile->midname }}" name="midname"></div>
                                         </div>
                                         <div class="col">
-                                            <div class="form-group"><label for="first_name"><strong>Date of Birth</strong><br></label><input class="form-control" type="text" value="{{ $profile->dob }}" name="first_name"></div>
+                                            <div class="form-group"><label for="first_name"><strong>Date of Birth</strong><br></label><input class="form-control" type="text" value="{{ $profile->dob }}" name="dob"></div>
                                         </div>
                                         <div class="col">
-                                            <div class="form-group"><label for="first_name"><strong>NIN</strong><br></label><input class="form-control" type="text" value="{{ $profile->nin }}" name="first_name"></div>
+                                            <div class="form-group"><label for="first_name"><strong>NIN</strong><br></label><input class="form-control" type="text" value="{{ $profile->nin }}" name="nin"></div>
                                         </div>
                                     </div>
                                     <div class="form-row">
@@ -199,14 +206,14 @@
                                             <div class="form-group"><label for="email"><strong>Email Address</strong></label><input class="form-control" type="email" value="{{ $profile->email }}" name="email"></div>
                                         </div>
                                         <div class="col">
-                                            <div class="form-group"><label for="first_name"><strong>Gender</strong><br></label><input class="form-control" type="text" value="{{ $profile->gender }}" name="first_name"></div>
+                                            <div class="form-group"><label for="first_name"><strong>Gender</strong><br></label><input class="form-control" type="text" value="{{ $profile->gender }}" name="gender"></div>
                                         </div>
                                         <div class="col">
-                                            <div class="form-group"><label for="first_name"><strong>Mothers Maiden Name</strong><br></label><input class="form-control" type="text" value="{{ $profile->momname }}" name="first_name"></div>
+                                            <div class="form-group"><label for="first_name"><strong>Mothers Maiden Name</strong><br></label><input class="form-control" type="text" value="{{ $profile->momname }}" name="momname"></div>
                                         </div>
                                     </div>
-                                </form>
-                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgba(0,123,255,0.59);">Update</button></div>
+                                
+                                {{-- <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgba(0,123,255,0.59);">Update</button></div> --}}
                             </div>
                         </div>
                         <div class="card shadow">
@@ -214,17 +221,17 @@
                                 <p class="m-0 font-weight-bold" style="color: rgb(32,97,149);font-family: century gothic;font-weight: normal;">ADDRESS INFORMATION</p>
                             </div>
                             <div class="card-body">
-                                <form>
+                                {{-- <form> --}}
                                     <div class="form-group"><label for="address"><strong>Address</strong></label><input class="form-control" type="text" value="{{ $profile->address }}" name="address"></div>
                                     <div class="form-row">
                                         <div class="col" style="width: 446px;">
-                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>City</strong><br></label><input class="form-control" type="text" value="{{ $profile->lga }}" name="city"></div>
+                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>City</strong><br></label><input class="form-control" type="text" value="{{ $profile->lga }}" name="lga"></div>
                                         </div>
                                         <div class="col" style="width: 446px;">
-                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>L.G.A</strong><br></label><input class="form-control" type="text" value="{{ $profile->lga }}" name="city"></div>
+                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>L.G.A</strong><br></label><input class="form-control" type="text" value="{{ $profile->city }}" name="city"></div>
                                         </div>
                                         <div class="col" style="width: 446px;">
-                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>State</strong><br></label><input class="form-control" type="text" value="{{ $profile->state }}" name="city"></div>
+                                            <div class="form-group" style="width: 148px;"><label for="city"><strong>State</strong><br></label><input class="form-control" type="text" value="{{ $profile->state }}" name="state"></div>
                                         </div>
                                     </div>
                                     <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgba(0,123,255,0.59);">Update</button></div>
