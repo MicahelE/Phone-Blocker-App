@@ -133,12 +133,12 @@
                             <p class="m-0 font-weight-bold" style="font-family: century gothic;color: rgb(3,10,17);">Subscriber Information</p>
                         </div>
                         <div class="card-body">
-                            {{-- <div class="row" style="width: 1050PX;">
+                            <div class="row" style="width: 1050PX;">
                                 <div class="col-md-6 text-nowrap" style="width: 500px;">
                                     <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable" style="width: 1698px;margin-left: 0px;"><label>Show&nbsp;<select class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>&nbsp;</label></div>
                                 </div>
                                 <div class="col-md-6" style="width: 1727px;margin-left: 0px;">
-                                    <div class="text-md-right dataTables_filter" id="dataTable_filter" style="margin-left: -19px;width: 500px;"><label></label>
+                                    <div class="text-md-right dataTables_filter" id="example1_filter" style="margin-left: -19px;width: 500px;"><label></label>
                                         <form class="d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" style="margin-left: 38px;">
                                             <div class="input-group"><input class="bg-light border-light form-control border-0 small" type="text" placeholder="Search for ..." style="width: 316px;background-color: rgb(253,254,255);font-size: 12px;font-family: century gothic;"
                                                     autofocus="">
@@ -147,7 +147,7 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info" style="width: 4500px;">
                                 <table class="table my-0" id="example1">
                                     <thead>
@@ -313,13 +313,12 @@
           "autoWidth": true,
           "scrollX": true,
           language: {
-            search: "_INPUT_",
-            searchPlaceholder: "Search records",
+         
           }
-  
+          sDom: 'lrtip'
         });
 
-        $('#example1_filter input[type="search"]').addClass("bg-light border-light form-control border-0 small").css({'width': '316px','background-color': 'rgb(253,254,255)','font-size': '12px','font-family': 'century gothic'});
+        // $('#example1_filter input[type="search"]').addClass("bg-light border-light form-control border-0 small").css({'width': '316px','background-color': 'rgb(253,254,255)','font-size': '12px','font-family': 'century gothic'});
       });
     </script>
 </body>

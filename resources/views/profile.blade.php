@@ -213,7 +213,7 @@
                                         </div>
                                     </div>
                                 
-                                {{-- <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgba(0,123,255,0.59);">Update</button></div> --}}
+                                <div class="form-group"><button class="btn btn-primary btn-sm" type="submit" style="background-color: rgba(0,123,255,0.59);">Update</button></div>
                             </div>
                         </div>
                         <div class="card shadow">
