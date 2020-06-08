@@ -212,9 +212,9 @@
                                       <td>{{ $row->phonetype1 }}</td>
                                       <td>{{ $row->puk }}</td>
                                       <td>@if ($row->blockstatus)
-                                        Active
-                                        @else 
                                         Inactive
+                                        @else 
+                                        Active
                                         @endif</td>
                                       <td>{{ $row->phonenumber2 }}</td>
                                       <td>{{ $row->network2 }}</td>
@@ -222,9 +222,9 @@
                                       <td>{{ $row->phonetype2 }}</td>
                                       <td>{{ $row->imei2 }}</td>
                                       <td>@if ($row->blockstatus2)
-                                        Active
-                                        @else 
                                         Inactive
+                                        @else 
+                                        Active
                                         @endif</td>
                                       <td>{{ $row->phonenumber3 }}</td>
                                       <td>{{ $row->network3 }}</td>
@@ -232,19 +232,19 @@
                                       <td>{{ $row->phonetype3 }}</td>
                                       <td>{{ $row->imei3 }}</td>
                                       <td>@if ($row->blockstatus3)
-                                        Active
-                                        @else 
                                         Inactive
+                                        @else 
+                                        Active
                                         @endif</td>
-                                      <td>{{ $row->phonenumber4 }}</td>
-                                      <td>{{ $row->network4 }}</td>
-                                      <td>{{ $row->linetype4 }}</td>
-                                      <td>{{ $row->phonetype4 }}</td>
-                                      <td>{{ $row->imei4 }}</td>
-                                      <td>@if ($row->blockstatus)
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>@if (($row->id==6 or $row->id==7) && $row->blockstatus4)
                                         Active
                                         @else 
-                                        Inactive
+                                        -
                                         @endif</td>
                   </tr>
                   @endforeach
