@@ -191,43 +191,59 @@
                                     </thead>
                                     <tbody>
                                       @foreach($data as $row)
-                  <tr data-id={{$row->id}}>  
-                                      <td> <a style="color: black;" href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
-                                      <td>Female</td>
-                                      <td>{{ $row->dob }}</td>
-                                      <td>{{ $row->nin }}</td>
-                                      <td>{{ $row->momname }}</td>
-                                      <td>Angelica@example.com</td>
-                                      <td>{{ $row->address }}</td>
-                                      <td>{{ $row->lga }}</td>
-                                      <td>{{ $row->lga }}</td>
-                                      <td>Lagos</td>
-                                      <td>{{ $row->simno }}</td>
-                                      <td>{{ $row->phonenumber }}</td>
-                                      <td>{{ $row->network }}</td>
-                                      <td>Private</td>
-                                      <td>{{ $row->phonetype1 }}</td>
-                                      <td>123456789012</td>
-                                      <td>Active</td>
-                                      <td>08123456789</td>
-                                      <td>Airtel</td>
-                                      <td>Business</td>
-                                      <td>{{ $row->phonetype2 }}</td>
-                                      <td>134567890123</td>
-                                      <td>Active</td>
-                                      <td>08134567878</td>
-                                      <td>glo</td>
-                                      <td>Business</td>
-                                      <td>{{ $row->phonetype3 }}</td>
-                                      <td>145678901234</td>
-                                      <td>Active</td>
-                                      <td>09091234567</td>
-                                      <td>9Mobile</td>
-                                      <td>Business</td>
-                                      <td>{{ $row->phonetype1 }}</td>
-                                      <td>156789012345</td>
-                                      <td>Active</td>
-                  </tr>
+                                      <tr data-id={{$row->id}}>  
+                                        <td>@if ( $row->gender=='Male' )<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/EQFtEzJGERg"> @else<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/g0pb9aXpbgQ"> @endif<a style="color: black;" href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
+                                                            <td>{{ $row->gender }}</td>
+                                                            <td>{{ $row->dob }}</td>
+                                                            <td>{{ $row->nin }}</td>
+                                                            <td>{{ $row->momname }}</td>
+                                                            <td>{{ $row->email }}</td>
+                                                            <td>{{ $row->address }}</td>
+                                                            <td>{{ $row->lga }}</td>
+                                                            <td>{{ $row->city }}</td>
+                                                            <td>{{ $row->state }}</td>
+                                                            <td>{{ $row->simno }}</td>
+                                                            <td>{{ $row->phonenumber }}</td>
+                                                            <td>{{ $row->network }}</td>
+                                                            <td>{{ $row->linetype1 }}</td>
+                                                            <td>{{ $row->phonetype1 }}</td>
+                                                            <td>{{ $row->puk }}</td>
+                                                            <td>@if ($row->blockstatus)
+                                                              Active
+                                                              @else 
+                                                              Inactive
+                                                              @endif</td>
+                                                            <td>{{ $row->phonenumber2 }}</td>
+                                                            <td>{{ $row->network2 }}</td>
+                                                            <td>{{ $row->linetype2 }}</td>
+                                                            <td>{{ $row->phonetype2 }}</td>
+                                                            <td>{{ $row->imei2 }}</td>
+                                                            <td>@if ($row->blockstatus2)
+                                                              Active
+                                                              @else 
+                                                              Inactive
+                                                              @endif</td>
+                                                            <td>{{ $row->phonenumber3 }}</td>
+                                                            <td>{{ $row->network3 }}</td>
+                                                            <td>{{ $row->linetype3 }}</td>
+                                                            <td>{{ $row->phonetype3 }}</td>
+                                                            <td>{{ $row->imei3 }}</td>
+                                                            <td>@if ($row->blockstatus3)
+                                                              Active
+                                                              @else 
+                                                              Inactive
+                                                              @endif</td>
+                                                            <td>{{ $row->phonenumber4 }}</td>
+                                                            <td>{{ $row->network4 }}</td>
+                                                            <td>{{ $row->linetype4 }}</td>
+                                                            <td>{{ $row->phonetype4 }}</td>
+                                                            <td>{{ $row->imei4 }}</td>
+                                                            <td>@if ($row->blockstatus)
+                                                              Active
+                                                              @else 
+                                                              Inactive
+                                                              @endif</td>
+                                        </tr>
                   @endforeach
                                     </tbody>
                                     <tfoot>
