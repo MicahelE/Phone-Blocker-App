@@ -140,7 +140,7 @@
     </nav>
     <div class="container" style="width: 1000px;height: 60px;margin-left: 216px;">
         <div style="width: 1000PX;margin-bottom: 0px;padding-bottom: 0px;margin-top: 0px;height: 45px;">
-            <h1 style="font-size: 26px;color: rgb(252,252,252);margin-left: 18px;font-family: century gothic;"><strong>Welcome!</strong><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="margin-left: 703px;background-color: rgb(106,160,217);"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a></h1>
+            <h1 style="font-size: 26px;color: rgb(252,252,252);margin-left: 18px;font-family: century gothic;"><strong>Welcome!</strong><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="{{ route('export') }}" style="margin-left: 703px;background-color: rgb(106,160,217);"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a></h1>
         </div>
     </div>
     <!-- Start: 1 Row 4 Columns -->
@@ -298,7 +298,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="/assets/js/script.min.js?h=c36e815cffc23831d7329b951063bde2"></script>
+    <script src="assets/js/script.min.js?h=c36e815cffc23831d7329b951063bde2"></script>
+    <script >$(document).ready(function(){
+
+        $('[data-bs-chart]').each(function(index, elem) {
+            this.chart = new Chart($(elem), $(elem).data('bs-chart'));
+        });
+    
+    });
+        </script>
 </body>
 
 </html>

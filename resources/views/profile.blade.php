@@ -264,42 +264,73 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr><form action="{{route('block',$profile->id)}}"  method="POST">
+                                <tr>
                                     <td>1</td>
                                     <td>{{ $profile->phonenumber }}</td>
-                                    <td>glo</td>
-                                    <td>Private</td>
-                                    <td>{{ $profile->phonetype2}}</td>
+                                    <td>{{ $profile->network }}</td>
+                                    <td>{{ $profile->linetype1 }}</td>
+                                    <td>{{ $profile->phonetype1}}</td>
                                     <td>Yes</td>
-                                    <td>1234567890</td>
-                                    <td>Active</td>
-                                    <td><button class="btn btn-primary" type="button" style="background-color: rgba(0,123,255,0.59);">Block Phone</button></td>
+                                    <td>{{ $profile->puk }}</td>
+                                    <td>@if ($profile->blockstatus)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+
+                                    <td><form action="{{route('block', $profile->id)}}"  method="POST">
+                                        {{ csrf_field() }}
+                                    <button class="btn btn-primary" type="submit" name="blockstatus" value="blockstatus" style="background-color: rgba(0,123,255,0.59);">@if ($profile->blockstatus)
+                                        Unblock Phone
+                                        @else 
+                                        Block Phone
+                                        @endif</button></td>
                                 </form>
                                 </tr>
                                 <tr>
-                                    <form action="{{route('block',$profile->id)}}"  method="POST">
+                                    
                                     <td>2</td>
-                                    <td>07068974898</td>
-                                    <td>mtn</td>
-                                    <td>Private</td>
+                                    <td>{{ $profile->phonenumber2 }}</td>
+                                    <td>{{ $profile->network2 }}</td>
+                                    <td>{{ $profile->linetype2 }}</td>
                                     <td>{{ $profile->phonetype2}}</td>
                                     <td>Yes</td>
-                                    <td>2008767862<br></td>
-                                    <td>Active</td>
-                                    <td><button class="btn btn-primary" type="button" style="background-color: rgba(0,123,255,0.59);">Block Phone</button></td>
+                                    <td>{{ $profile->imei2}}<br></td>
+                                    <td>@if ($profile->blockstatus2)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                    <td><form action="{{route('block',$profile->id)}}"  method="POST">
+                                        {{ csrf_field() }}
+                                        <button class="btn btn-primary" type="submit" name="blockstatus" value="blockstatus2" style="background-color: rgba(0,123,255,0.59);">@if ($profile->blockstatus2)
+                                        Unblock Phone
+                                        @else 
+                                        Block Phone
+                                        @endif</button></td>
                                     </form>
                                 </tr>
                                 <tr>
-                                    <form action="{{route('block',$profile->id)}}"  method="POST">
+                                   
                                     <td>3</td>
-                                    <td>08107897867</td>
-                                    <td>airtel</td>
-                                    <td>Business</td>
+                                    <td>{{ $profile->phonenumber3 }}</td>
+                                    <td>{{ $profile->network3 }}</td>
+                                    <td>{{ $profile->linetype3 }}</td>
                                     <td>{{ $profile->phonetype3}}</td>
                                     <td>No</td>
-                                    <td>3322432659</td>
-                                    <td>Active</td>
-                                    <td><button class="btn btn-primary" type="button" style="background-color: rgba(0,123,255,0.59);">Block Phone</button></td>
+                                    <td>{{ $profile->imei3}}</td>
+                                    <td>@if ($profile->blockstatus3)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                    <td>
+                                        <form action="{{route('block',$profile->id)}}"  method="POST">
+                                            {{ csrf_field() }}<button class="btn btn-primary" type="submit" name="blockstatus" value="blockstatus3" style="background-color: rgba(0,123,255,0.59);">@if ($profile->blockstatus3)
+                                        Unblock Phone
+                                        @else 
+                                        Block Phone
+                                        @endif</button></td>
                                     </form>
                                 </tr>
                                 <tr><form action="{{route('block',$profile->id)}}"  method="POST">
