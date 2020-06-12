@@ -21,6 +21,8 @@ Route::get('/', function () {
 });
 Route::get('datatable', 'CsvFile@data')->name('datatable');
 Route::get('blockedlines', 'PhoneuserController@blockedlines')->name('blockedlines');
+Route::get('smartusers', 'PhoneuserController@smartusers')->name('smartusers');
+Route::get('flagged', 'PhoneuserController@flagged')->name('flagged');
 Route::get('csv_file', 'CsvFile@index');
 Route::get('/profile/{id}', 'CsvFile@profile')->name('profile');
 Route::get('/update/{id}', 'CsvFile@update')->name('update');

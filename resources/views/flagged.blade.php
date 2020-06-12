@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="/assets/fonts/fontawesome5-overrides.min.css?h=2c0fc24b3d3038317dc51c05339856d0">
     <link rel="stylesheet" href="/assets/css/styles.min.css?h=37e5519e2d0203c617714852a76d0b4e">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-    {{-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css"> --}}
 </head>
 
 <body style="background-color: #d7d9e0;">
@@ -127,13 +125,13 @@
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <div class="container-fluid" style="width: 4550px;">
-                    <h3 class="text-dark mb-4" style="font-family: century gothic;">Total Subscribers</h3>
+                    <h3 class="text-dark mb-4" style="font-family: century gothic;">Flagged Subscribers</h3>
                     <div class="card shadow" style="width: 4550px;">
                         <div class="card-header py-3">
                             <p class="m-0 font-weight-bold" style="font-family: century gothic;color: rgb(3,10,17);">Subscriber Information</p>
                         </div>
                         <div class="card-body">
-                            {{-- <div class="row" style="width: 1050PX;">
+                            <div class="row" style="width: 1050PX;">
                                 <div class="col-md-6 text-nowrap" style="width: 500px;">
                                     <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable" style="width: 1698px;margin-left: 0px;"><label>Show&nbsp;<select class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>&nbsp;</label></div>
                                 </div>
@@ -147,9 +145,9 @@
                                         </form>
                                     </div>
                                 </div>
-                            </div> --}}
+                            </div>
                             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info" style="width: 4500px;">
-                                <table class="table my-0" id="example1">
+                                <table class="table my-0" id="dataTable">
                                     <thead>
                                         <tr>
                                             <th style="width: 241px;">Full Name</th>
@@ -190,70 +188,53 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                      @foreach($data as $row)
-                                      <tr data-id={{$row->id}}>  
-                                        <td>@if ( $row->gender=='Male' )<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/EQFtEzJGERg"> @else<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/g0pb9aXpbgQ"> @endif<a style="color: black;" href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
-                                                            <td>{{ $row->gender }}</td>
-                                                            <td>{{ $row->dob }}</td>
-                                                            <td>{{ $row->nin }}</td>
-                                                            <td>{{ $row->momname }}</td>
-                                                            <td>{{ $row->email }}</td>
-                                                            <td>{{ $row->address }}</td>
-                                                            <td>{{ $row->lga }}</td>
-                                                            <td>{{ $row->city }}</td>
-                                                            <td>{{ $row->state }}</td>
-                                                            <td>{{ $row->simno }}</td>
-                                                            <td>{{ $row->phonenumber }}</td>
-                                                            <td>{{ $row->network }}</td>
-                                                            <td>{{ $row->linetype1 }}</td>
-                                                            <td>{{ $row->phonetype1 }}</td>
-                                                            <td>{{ $row->puk }}</td>
-                                                            <td>@if ($row->blockstatus)
-                                                              Inactive
-                                                              @else 
-                                                              Active
-                                                              @endif</td>
-                                                            <td>{{ $row->phonenumber2 }}</td>
-                                                            <td>{{ $row->network2 }}</td>
-                                                            <td>{{ $row->linetype2 }}</td>
-                                                            <td>{{ $row->phonetype2 }}</td>
-                                                            <td>{{ $row->imei2 }}</td>
-                                                            <td>@if ($row->blockstatus2)
-                                                              Inactive
-                                                              @else 
-                                                              Active
-                                                              @endif</td>
-                                                            <td>{{ $row->phonenumber3 }}</td>
-                                                            <td>{{ $row->network3 }}</td>
-                                                            <td>{{ $row->linetype3 }}</td>
-                                                            <td>{{ $row->phonetype3 }}</td>
-                                                            <td>{{ $row->imei3 }}</td>
-                                                            <td>@if ($row->blockstatus3)
-                                                              Inactive
-                                                              @else 
-                                                              Active
-                                                              @endif</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td>-</td>
-                                                            <td>@if (($row->id==6 or $row->id==7) && $row->blockstatus4)
-                                                                Active
-                                                                @else 
-                                                                -
-                                                                @endif</td>
+                                        <tr></tr>
+                                        <tr>
+                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="/Aramide%20profile.html" style="color: rgb(230,7,34);">Aramide Angelica Mofe</a></td>
+                                            <td>Female</td>
+                                            <td>01/06/1978</td>
+                                            <td>1234567890</td>
+                                            <td>Alex</td>
+                                            <td>Angelica@example.com</td>
+                                            <td>20 limrock Street</td>
+                                            <td>Ikeja</td>
+                                            <td>Ikeja</td>
+                                            <td>Lagos</td>
+                                            <td>4</td>
+                                            <td>07031234567</td>
+                                            <td>MTN</td>
+                                            <td>Private</td>
+                                            <td>Iphone 6</td>
+                                            <td>123456789012</td>
+                                            <td>Active</td>
+                                            <td>08123456789</td>
+                                            <td>Airtel</td>
+                                            <td>Business</td>
+                                            <td>Samsung 10</td>
+                                            <td>134567890123</td>
+                                            <td>Active</td>
+                                            <td>08134567878</td>
+                                            <td>glo</td>
+                                            <td>Business</td>
+                                            <td>Oppo 1</td>
+                                            <td>145678901234</td>
+                                            <td>Active</td>
+                                            <td>09091234567</td>
+                                            <td>9Mobile</td>
+                                            <td>Business</td>
+                                            <td>Tecno 1</td>
+                                            <td>156789012345</td>
+                                            <td>Active</td>
                                         </tr>
-                  @endforeach
                                     </tbody>
                                     <tfoot>
                                         <tr></tr>
                                     </tfoot>
                                 </table>
                             </div>
-                            {{-- <div class="row">
+                            <div class="row">
                                 <div class="col-md-6 align-self-center">
-                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                                    <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing All</p>
                                 </div>
                                 <div class="col-md-6">
                                     <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
@@ -266,7 +247,7 @@
                                         </ul>
                                     </nav>
                                 </div>
-                            </div> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -279,13 +260,13 @@
             <nav
                 class="navbar navbar-dark fixed-top align-items-start" style="height: 1348px;width: 224px;background-color: #33343aee;margin-top: 201px;">
                 <div class="container-fluid">
-                  <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Smartphone Users</span></a></li>
-                            {{-- <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li> --}}
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phone List</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/blockedlines"><span>Flagged Subscribers</span></a></li>
-                        </ul>
+                    <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/total%20subscribers.html"><span>Total Subscribers</span></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/Smartphone%20Users.html"><span>Smartphone Users</span></a></li>
+                        <li class="nav-item" role="presentation"></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="/Blocked%20phone%20list.html"><span>Blocked Phone List</span></a><a class="nav-link" href="register.html"><span>Network Statistics</span></a><a class="nav-link" href="/Flagged%20Subscribers.html"><span>Flagged Subscribers</span></a></li>
+                    </ul>
                 </div>
     </nav>
     </div>
@@ -295,30 +276,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="/assets/js/script.min.js?h=c36e815cffc23831d7329b951063bde2"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap.min.js"></script>
-    <script>
-      $(document).ready(function() {
-       $('#example1').DataTable({
-          "pagingType": "full_numbers",
-          "lengthMenu": [
-            [10, 25, 50, -1],
-            [10, 25, 50, "All"]
-          ],
-          responsive: false,
-          "scrollY": 500,
-          "autoWidth": true,
-          "scrollX": true,
-          language: {
-            search: "_INPUT_",
-            searchPlaceholder: "Search records",
-          }
-  
-        });
-
-        $('#example1_filter input[type="search"]').addClass("bg-light border-light form-control border-0 small").css({'width': '316px','background-color': 'rgb(253,254,255)','font-size': '12px','font-family': 'century gothic'});
-      });
-    </script>
 </body>
 
 </html>

@@ -148,6 +148,19 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="panel-body">
+                                <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data" onsubmit="$('.fa-spinner').removeAttr('hidden');">
+                                 @csrf
+                                 <input type="file" name="file" accept=".csv" required>
+                                 <i class="fas fa-spinner fa-spin" hidden></i>
+                                       <br>
+                                       
+                                       <button class="btn btn-primary" onclick=" ">Import User Data</button>
+                                       <a class="btn btn-info" href="{{ route('export') }}">Export User Data</a>
+                                       
+                                </form>
+                               
+                               </div>
                             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info" style="width: 4500px;">
                                 <table class="table my-0" id="example1">
                                     <thead>
@@ -283,12 +296,12 @@
                 class="navbar navbar-dark fixed-top align-items-start" style="height: 1348px;width: 224px;background-color: #33343aee;margin-top: 201px;">
                 <div class="container-fluid">
                   <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Smartphone Users</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phones</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/blockedlines"><span>Flagged Subscribers</span></a></li>
-                </ul>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Smartphone Users</span></a></li>
+                            {{-- <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li> --}}
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phone List</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/blockedlines"><span>Flagged Subscribers</span></a></li>
+                        </ul>
                 </div>
     </nav>
     </div>

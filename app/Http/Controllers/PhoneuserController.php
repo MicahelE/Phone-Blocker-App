@@ -109,5 +109,14 @@ class PhoneuserController extends Controller
        return view('blockedlines', compact('data'));
     }
 
+    public function smartusers()
+    { $data=Phoneuser::all();
+       return view('smartusers', compact('data'));
+    }
+
+    public function flagged()
+    { $data=Phoneuser::all();
+       return view('flagged', compact('data'));
+    }
 
 }

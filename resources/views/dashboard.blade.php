@@ -25,8 +25,8 @@
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Smartphone Users</span></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phones</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/blockedlines"><span>Flagged Subscribers</span></a></li>
+                            {{-- <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li> --}}
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phone List</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/blockedlines"><span>Flagged Subscribers</span></a></li>
                         </ul>
                     </div>
         </nav>
@@ -144,7 +144,7 @@
         </div>
     </div>
     <!-- Start: 1 Row 4 Columns -->
-    <div style="margin-left: 221px;margin-bottom: 0px;width: 1000px;height: 300px;margin-top: -6px;">
+    <div style="margin-left: 221px;margin-bottom: 0px;width: 1000px;height: 300px;margin-top: -7px;padding-top: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-3" style="width: 188.5px;">
@@ -158,10 +158,10 @@
                                     <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a></div>
                             </div>
                         </div>
-                        <div class="card-body" style="width: 245px;background-color: rgba(250,249,251,0);margin-top: 55px;"><a class="card-link flash animated" href="#" style="color: rgb(41,13,101);font-size: 27px;margin-left: 72px;margin-top: -28px;margin-bottom: 3px;">&nbsp;{{$data}}</a>
-                            <div class="chart-area" style="width: 206px;margin-right: 0px;margin-top: -98px;"><canvas data-bs-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Men&quot;,&quot;Women&quot;,&quot;Business&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]},{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[],&quot;borderColor&quot;:[],&quot;data&quot;:[]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
+                        <div class="card-body" style="width: 245px;background-color: rgba(250,249,251,0);margin-top: 55px;"><a class="card-link flash animated" href="#" style="color: rgb(41,13,101);font-size: 27px;margin-left: 79px;margin-top: -28px;margin-bottom: 3px;">&nbsp;{{$data}}  </a>
+                            <div class="chart-area" style="width: 206px;margin-right: 0px;margin-top: -98px;"><canvas data-bs-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Male&quot;,&quot;Female&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;13&quot;,&quot;11&quot;,&quot;&quot;]},{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[],&quot;borderColor&quot;:[],&quot;data&quot;:[]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
                             <div
-                                class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Male</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Female</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Business</span></div>
+                                class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Male</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Female</span></div>
                     </div>
                     <div class="card-body"></div>
                 </div>
@@ -169,7 +169,7 @@
             <div class="col-md-3" style="height: 275px;width: 188.5px;padding-left: 24px;margin-left: -5px;">
                 <div class="card" style="width: 245px;height: 275px;">
                     <div class="card-header d-flex justify-content-between align-items-center" style="width: 245px;background-repeat: no-repeat;background-size: cover;background-color: rgba(170,60,120,0.58);font-family: century gothic;color: rgb(253,254,255);">
-                        <h6 class="font-weight-bold m-0">Smartphone Users</h6>
+                        <h6 class="font-weight-bold m-0">Top Users Network</h6>
                         <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
                             <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
                                 role="menu">
@@ -203,7 +203,7 @@
                                 <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
                                 <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a></div>
                         </div>
-                    </div><a class="flash animated" href="#" style="width: 56px;margin-left: 26px;margin-top: 20px;color: rgb(3,87,123);font-size: 28px;">{{$block}}</a>
+                    </div><a class="flash animated" href="#" style="width: 56px;margin-left: 26px;margin-top: 20px;color: rgb(3,87,123);font-size: 28px;">{{$unblock}}</a>
                     <div class="card-body flash animated" style="width: 250px;background-image: url(&quot;/assets/img/locked.png?h=837ad4775902d64067ac0dcfaead249a&quot;);height: 218px;margin-top: -60px;"></div>
                 </div>
             </div>
@@ -217,7 +217,7 @@
                                 <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
                                 <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a></div>
                         </div>
-                    </div><a class="flash animated" href="#" style="width: 56px;margin-left: 179px;margin-top: 20px;color: rgb(135,74,3);font-size: 28px;">{{$unblock}}</a>
+                    </div><a class="flash animated" href="#" style="width: 56px;margin-left: 179px;margin-top: 20px;color: rgb(135,74,3);font-size: 28px;">{{$block}}</a>
                     <div class="card-body flash animated" style="width: 250px;background-image: url(&quot;/assets/img/unlock.png?h=f1cec50f406123c60967bbb07eb9a8ba&quot;);height: 218px;margin-top: -60px;"></div>
                 </div>
             </div>
@@ -226,12 +226,11 @@
     </div>
     <!-- End: 1 Row 4 Columns -->
     <!-- Start: 1 Row 4 Columns -->
-    <div style="width: 1000px;height: 300px;margin-left: 222px;margin-top: -33px;">
-        <div class="container" style="margin-top: -26px;">
-            <!-- Start: Chart -->
-            <div class="row" style="margin-left: -15px;">
-                <div class="col-lg-7 col-xl-8" style="padding-top: 17px;">
-                    <div class="card shadow mb-4">
+    <div style="margin-left: -16px;">
+        <div class="container">
+            <div class="row" style="margin-left: 228px;margin-bottom: -21px;width: 1200px;margin-top: -34px;">
+                <div class="col-lg-7 col-xl-8" style="padding-top: 17px;width: 496px;margin-left: -8px;padding-right: 0px;padding-left: 0px;">
+                    <div class="card shadow mb-4" style="width: 480px;margin-left: 17px;height: 262px;">
                         <div class="card-header d-flex justify-content-between align-items-center" style="background-color: rgb(47,53,71);padding-top: 12px;">
                             <h6 class="font-weight-bold m-0" style="color: rgb(251,247,247);font-family: century gothic;">New Subscriber Weekly Report</h6>
                             <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
@@ -246,27 +245,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-xl-4" style="width: 405px;">
-                    <div class="card" style="background-color: rgba(255,255,255,0);height: 246px;width: 326px;margin-top: 19px;padding-top: 0Px;">
-                        <div class="card-header" style="background-image: url(&quot;/assets/img/new-sim-reg.png?h=ae586fbd743f4ae88924a022ef9479ab&quot;);width: 325px;background-repeat: no-repeat;margin-top: -2px;margin-bottom: 1px;height: 155px;"></div>
-                        <div class="card-body" style="background-image: url(&quot;/assets/img/new-sim-reg.png?h=ae586fbd743f4ae88924a022ef9479ab&quot;);height: 430px;background-repeat: no-repeat;background-size: cover;background-color: rgba(255,255,255,0);margin-top: -73px;width: 325px;">
-                            <h4 class="card-title" style="color: rgb(252,253,254);font-size: 40px;width: 298px;margin-top: -25px;">20%<i class="fa fa-caret-up" style="margin-left: 21px;width: 36px;height: 37px;"></i><i class="fa fa-caret-up flash animated infinite" style="margin-left: -36px;width: 36px;height: 37px;padding: 0px;color: rgb(84,121,159);"></i>
-                                <i
-                                    class="fa fa-refresh" style="margin-left: 118px;width: 31px;font-size: 34px;"></i>
-                            </h4>
-                            <h6 class="card-subtitle mb-2" style="background-color: rgba(255,255,255,0);color: rgb(253,253,254);">New SIM Registration</h6><a class="card-link" href="#" style="color: rgb(252,253,254);font-size: 17px;margin-left: 236px;margin-bottom: 0px;">3,152</a><a class="card-link" href="#" style="color: rgb(251,252,254);font-size: 10px;margin-left: 210px;margin-top: 0px;">(24/05/2020)</a></div>
-                    </div>
-                </div>
+                <div class="col-md-4" style="margin-right: -4px;margin-left: -281px;margin-top: 9px;"><img style="background-image: url(&quot;/assets/img/locations.png?h=856df217e0e6037ab245271d0feec0ea&quot;);width: 522px;height: 262px;margin-left: -28px;margin-top: 9px;margin-bottom: -77px;"><a class="flash animated infinite" href="#" style="margin-left: 242px;height: 11px;background-repeat: no-repeat;margin-top: 218px;margin-right: 3px;background-image: url(&quot;/assets/img/beeper.png?h=fd169c299a6fcfa6bb6dfae694e8f1e5&quot;);width: 31px;color: rgba(0,123,255,0);padding: 0px;">po</a></div>
             </div>
-            <!-- End: Chart -->
         </div>
     </div>
-    <!-- End: 1 Row 4 Columns -->
-    <!-- Start: 1 Row 2 Columns -->
-    <div style="height: 280px;width: 1030px;margin-left: 223px;">
-        <div class="container" style="margin-top: -26px;">
+    <!-- End: 1 Row 3 Columns -->
+    <!-- Start: 1 Row 3 Columns -->
+    <div style="margin-left: 223px;width: 1000px;margin-top: 8px;">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6" style="width: 381px;">
+                <div class="col-md-4">
                     <div class="card" style="width: 350px;height: 275px;">
                         <div class="card-header d-flex justify-content-between align-items-center" style="width: 350px;background-size: contain;background-repeat: no-repeat;background-color: rgba(133,128,154,0.62);">
                             <h6 class="font-weight-bold m-0" style="color: rgb(254,254,254);font-family: century gothic;">Age Cohort of Subscribers</h6>
@@ -283,17 +271,40 @@
                         <div class="card-body" style="width: 50px;height: 200px;"></div>
                     </div>
                 </div>
-                <div class="col-md-6" style="background-repeat: no-repeat;"><img style="background-image: url(&quot;/assets/img/locations.png?h=856df217e0e6037ab245271d0feec0ea&quot;);width: 522px;height: 262px;margin-left: -28px;margin-top: 9px;margin-bottom: -77px;"><a class="flash animated infinite" href="#" style="margin-left: 242px;height: 11px;background-repeat: no-repeat;margin-top: 218px;margin-right: 3px;background-image: url(&quot;/assets/img/beeper.png?h=fd169c299a6fcfa6bb6dfae694e8f1e5&quot;);width: 31px;color: rgba(0,123,255,0);padding: 0px;">po</a></div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card"></div>
+                <div class="col-md-4" style="margin-left: -11px;">
+                    <div class="card" style="width: 300px;height: 275px;margin: 8px;margin-top: 0px;margin-right: 1px;margin-left: 41px;">
+                        <div class="card-header d-flex justify-content-between align-items-center" style="width: 300px;background-size: contain;background-repeat: no-repeat;background-color: rgba(61,186,134,0.62);height: 76px;">
+                            <h6 class="font-weight-bold m-0" style="color: rgb(254,254,254);font-family: century gothic;">Registered Lines</h6>
+                            <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                    role="menu">
+                                    <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a></div>
+                            </div>
+                        </div>
+                        <div class="card-body" style="width: 245px;background-color: rgba(250,249,251,0);margin-top: 55px;"><a class="card-link flash animated" href="#" style="color: rgb(41,13,101);font-size: 27px;margin-left: 102px;margin-top: -28px;margin-bottom: 3px;">&nbsp;60</a>
+                            <div class="chart-area" style="width: 250px;margin-right: 0px;margin-top: -98px;height: 188px;"><canvas data-bs-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Business&quot;,&quot;Private&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;rgba(220,78,223,0.57)&quot;,&quot;#8c8d9a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;23&quot;,&quot;37&quot;,&quot;&quot;]},{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[],&quot;borderColor&quot;:[],&quot;data&quot;:[]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:true,&quot;position&quot;:&quot;bottom&quot;},&quot;title&quot;:{}}}"></canvas></div>
+                        </div>
+                        <div class="card-body">
+                            <div class="text-center small mt-4" style="margin-top: -1px;padding-top: -44px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="width: 344px;">
+                    <div class="card" style="background-color: rgba(255,255,255,0);height: 275px;width: 322px;margin-top: 0px;padding-top: 0Px;margin-left: 26px;">
+                        <div class="card-header" style="background-image: url(&quot;/assets/img/new-sim-reg.png?h=ae586fbd743f4ae88924a022ef9479ab&quot;);width: 325px;background-repeat: no-repeat;margin-top: -2px;margin-bottom: 1px;height: 155px;"></div>
+                        <div class="card-body" style="background-image: url(&quot;/assets/img/new-sim-reg.png?h=ae586fbd743f4ae88924a022ef9479ab&quot;);height: 430px;background-repeat: no-repeat;background-size: cover;background-color: rgba(255,255,255,0);margin-top: -73px;width: 325px;">
+                            <h4 class="card-title" style="color: rgb(252,253,254);font-size: 40px;width: 298px;margin-top: -25px;">20%<i class="fa fa-caret-up" style="margin-left: 21px;width: 36px;height: 37px;"></i><i class="fa fa-caret-up flash animated infinite" style="margin-left: -36px;width: 36px;height: 37px;padding: 0px;color: rgb(84,121,159);"></i>
+                                <i
+                                    class="fa fa-refresh" style="margin-left: 118px;width: 31px;font-size: 34px;"></i>
+                            </h4>
+                            <h6 class="card-subtitle mb-2" style="background-color: rgba(255,255,255,0);color: rgb(253,253,254);">New SIM Registration</h6><a class="card-link" href="#" style="color: rgb(252,253,254);font-size: 17px;margin-left: 236px;margin-bottom: 0px;">3,152</a><a class="card-link" href="#" style="color: rgb(251,252,254);font-size: 10px;margin-left: 210px;margin-top: 0px;">(24/06/2020)</a></div>
+                    </div>
                 </div>
             </div>
-            <footer></footer>
         </div>
     </div>
-    <!-- End: 1 Row 2 Columns -->
+    <!-- End: 1 Row 3 Columns -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
