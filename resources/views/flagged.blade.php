@@ -187,44 +187,174 @@
                                             <th style="width: 104px;">Phone 4 Status</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody class="colorred">
                                         <tr></tr>
                                         <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="/Aramide%20profile.html" style="color: rgb(230,7,34);">Aramide Angelica Mofe</a></td>
-                                            <td>Female</td>
-                                            <td>01/06/1978</td>
-                                            <td>1234567890</td>
-                                            <td>Alex</td>
-                                            <td>Angelica@example.com</td>
-                                            <td>20 limrock Street</td>
-                                            <td>Ikeja</td>
-                                            <td>Ikeja</td>
-                                            <td>Lagos</td>
-                                            <td>4</td>
-                                            <td>07031234567</td>
-                                            <td>MTN</td>
-                                            <td>Private</td>
-                                            <td>Iphone 6</td>
-                                            <td>123456789012</td>
-                                            <td>Active</td>
-                                            <td>08123456789</td>
-                                            <td>Airtel</td>
-                                            <td>Business</td>
-                                            <td>Samsung 10</td>
-                                            <td>134567890123</td>
-                                            <td>Active</td>
-                                            <td>08134567878</td>
-                                            <td>glo</td>
-                                            <td>Business</td>
-                                            <td>Oppo 1</td>
-                                            <td>145678901234</td>
-                                            <td>Active</td>
-                                            <td>09091234567</td>
-                                            <td>9Mobile</td>
-                                            <td>Business</td>
-                                            <td>Tecno 1</td>
-                                            <td>156789012345</td>
-                                            <td>Active</td>
+                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="{{ route('profile', $data[14]->id) }}" style="color: rgb(230,7,34);">{{ $data[14]->name }}</a></td>
+                                            <td>{{ $data[14]->gender }}</td>
+                                      <td>{{ $data[14]->dob }}</td>
+                                      <td>{{ $data[14]->nin }}</td>
+                                      <td>{{ $data[14]->momname }}</td>
+                                      <td>{{ $data[14]->email }}</td>
+                                      <td>{{ $data[14]->address }}</td>
+                                      <td>{{ $data[14]->lga }}</td>
+                                      <td>{{ $data[14]->city }}</td>
+                                      <td>{{ $data[14]->state }}</td>
+                                      <td>{{ $data[14]->simno }}</td>
+                                      <td>{{ $data[14]->phonenumber }}</td>
+                                      <td>{{ $data[14]->network }}</td>
+                                      <td>{{ $data[14]->linetype1 }}</td>
+                                      <td>{{ $data[14]->phonetype1 }}</td>
+                                      <td>{{ $data[14]->puk }}</td>
+                                      <td>@if ($data[14]->blockstatus)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>{{ $data[14]->phonenumber2 }}</td>
+                                      <td>{{ $data[14]->network2 }}</td>
+                                      <td>{{ $data[14]->linetype2 }}</td>
+                                      <td>{{ $data[14]->phonetype2 }}</td>
+                                      <td>{{ $data[14]->imei2 }}</td>
+                                      <td>@if ($data[14]->blockstatus2)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>{{ $data[14]->phonenumber3 }}</td>
+                                      <td>{{ $data[14]->network3 }}</td>
+                                      <td>{{ $data[14]->linetype3 }}</td>
+                                      <td>{{ $data[14]->phonetype3 }}</td>
+                                      <td>{{ $data[14]->imei3 }}</td>
+                                      <td>@if ($data[14]->blockstatus3)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>@if (($data[14]->id==6 or $data[14]->id==7) && $data[14]->blockstatus4)
+                                        Active
+                                        @else 
+                                        -
+                                        @endif</td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="{{ route('profile', $data[8]->id) }}" style="color: rgb(230,7,34);">{{ $data[8]->name }}</a></td>
+                                            <td>{{ $data[8]->gender }}</td>
+                                      <td>{{ $data[8]->dob }}</td>
+                                      <td>{{ $data[8]->nin }}</td>
+                                      <td>{{ $data[8]->momname }}</td>
+                                      <td>{{ $data[8]->email }}</td>
+                                      <td>{{ $data[8]->address }}</td>
+                                      <td>{{ $data[8]->lga }}</td>
+                                      <td>{{ $data[8]->city }}</td>
+                                      <td>{{ $data[8]->state }}</td>
+                                      <td>{{ $data[8]->simno }}</td>
+                                      <td>{{ $data[8]->phonenumber }}</td>
+                                      <td>{{ $data[8]->network }}</td>
+                                      <td>{{ $data[8]->linetype1 }}</td>
+                                      <td>{{ $data[8]->phonetype1 }}</td>
+                                      <td>{{ $data[8]->puk }}</td>
+                                      <td>@if ($data[8]->blockstatus)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>{{ $data[8]->phonenumber2 }}</td>
+                                      <td>{{ $data[8]->network2 }}</td>
+                                      <td>{{ $data[8]->linetype2 }}</td>
+                                      <td>{{ $data[8]->phonetype2 }}</td>
+                                      <td>{{ $data[8]->imei2 }}</td>
+                                      <td>@if ($data[8]->blockstatus2)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>{{ $data[8]->phonenumber3 }}</td>
+                                      <td>{{ $data[8]->network3 }}</td>
+                                      <td>{{ $data[8]->linetype3 }}</td>
+                                      <td>{{ $data[8]->phonetype3 }}</td>
+                                      <td>{{ $data[8]->imei3 }}</td>
+                                      <td>@if ($data[8]->blockstatus3)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>@if (($data[8]->id==6 or $data[8]->id==7) && $data[8]->blockstatus4)
+                                        Active
+                                        @else 
+                                        -
+                                        @endif</td>
+                                        </tr>
+
+
+
+
+
+                                        <tr>
+                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="{{ route('profile', $data[11]->id) }}" style="color: rgb(230,7,34);">{{ $data[11]->name }}</a></td>
+                                            <td>{{ $data[11]->gender }}</td>
+                                      <td>{{ $data[11]->dob }}</td>
+                                      <td>{{ $data[11]->nin }}</td>
+                                      <td>{{ $data[11]->momname }}</td>
+                                      <td>{{ $data[11]->email }}</td>
+                                      <td>{{ $data[11]->address }}</td>
+                                      <td>{{ $data[11]->lga }}</td>
+                                      <td>{{ $data[11]->city }}</td>
+                                      <td>{{ $data[11]->state }}</td>
+                                      <td>{{ $data[11]->simno }}</td>
+                                      <td>{{ $data[11]->phonenumber }}</td>
+                                      <td>{{ $data[11]->network }}</td>
+                                      <td>{{ $data[11]->linetype1 }}</td>
+                                      <td>{{ $data[11]->phonetype1 }}</td>
+                                      <td>{{ $data[11]->puk }}</td>
+                                      <td>@if ($data[11]->blockstatus)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>{{ $data[11]->phonenumber2 }}</td>
+                                      <td>{{ $data[11]->network2 }}</td>
+                                      <td>{{ $data[11]->linetype2 }}</td>
+                                      <td>{{ $data[11]->phonetype2 }}</td>
+                                      <td>{{ $data[11]->imei2 }}</td>
+                                      <td>@if ($data[11]->blockstatus2)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>{{ $data[11]->phonenumber3 }}</td>
+                                      <td>{{ $data[11]->network3 }}</td>
+                                      <td>{{ $data[11]->linetype3 }}</td>
+                                      <td>{{ $data[11]->phonetype3 }}</td>
+                                      <td>{{ $data[11]->imei3 }}</td>
+                                      <td>@if ($data[11]->blockstatus3)
+                                        Inactive
+                                        @else 
+                                        Active
+                                        @endif</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>-</td>
+                                      <td>@if (($data[11]->id==6 or $data[11]->id==7) && $data[11]->blockstatus4)
+                                        Active
+                                        @else 
+                                        -
+                                        @endif</td>
                                         </tr>
                                     </tbody>
                                     <tfoot>
@@ -260,13 +390,14 @@
             <nav
                 class="navbar navbar-dark fixed-top align-items-start" style="height: 1348px;width: 224px;background-color: #33343aee;margin-top: 201px;">
                 <div class="container-fluid">
-                    <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/total%20subscribers.html"><span>Total Subscribers</span></a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/Smartphone%20Users.html"><span>Smartphone Users</span></a></li>
-                        <li class="nav-item" role="presentation"></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/Blocked%20phone%20list.html"><span>Blocked Phone List</span></a><a class="nav-link" href="register.html"><span>Network Statistics</span></a><a class="nav-link" href="/Flagged%20Subscribers.html"><span>Flagged Subscribers</span></a></li>
-                    </ul>
+                     <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/smartusers"><span>Smartphone Users</span></a></li>
+                            {{-- <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li> --}}
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phone List</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/flagged"><span>Flagged Subscribers</span></a></li>
+                        </ul>
+                    </div>
                 </div>
     </nav>
     </div>

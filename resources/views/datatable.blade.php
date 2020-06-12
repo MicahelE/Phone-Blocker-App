@@ -148,7 +148,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel-body">
+                            {{-- <div class="panel-body">
                                 <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data" onsubmit="$('.fa-spinner').removeAttr('hidden');">
                                  @csrf
                                  <input type="file" name="file" accept=".csv" required>
@@ -160,7 +160,7 @@
                                        
                                 </form>
                                
-                               </div>
+                               </div> --}}
                             <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info" style="width: 4500px;">
                                 <table class="table my-0" id="example1">
                                     <thead>
@@ -205,10 +205,10 @@
                                     <tbody>
                                       @foreach($data as $row)
                                       @php
-                                          $no= rand(1,22);
+                                          $no= rand(1,5);
                                       @endphp
                   <tr data-id={{$row->id}}>  
-                  <td>@if ( $row->gender=='Male' )<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/EQFtEzJGERg"> @else<img class="rounded-circle mr-2" width="30" height="30" src="https://source.unsplash.com/g0pb9aXpbgQ"> @endif<a style="color: black;" href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
+                  <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar{{$no}}.jpeg">{{ $row->name }}</a></td>
                                       <td>{{ $row->gender }}</td>
                                       <td>{{ $row->dob }}</td>
                                       <td>{{ $row->nin }}</td>
@@ -295,13 +295,14 @@
             <nav
                 class="navbar navbar-dark fixed-top align-items-start" style="height: 1348px;width: 224px;background-color: #33343aee;margin-top: 201px;">
                 <div class="container-fluid">
-                  <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
+                   <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Smartphone Users</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/smartusers"><span>Smartphone Users</span></a></li>
                             {{-- <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li> --}}
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phone List</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/blockedlines"><span>Flagged Subscribers</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phone List</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/flagged"><span>Flagged Subscribers</span></a></li>
                         </ul>
+                    </div>
                 </div>
     </nav>
     </div>

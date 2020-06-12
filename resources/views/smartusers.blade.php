@@ -227,353 +227,65 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td style="width: 100px;"><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"><a href="/Titi%20Profile.html" style="color: rgb(20,23,27);">Titi Sandra Adekunle</a></td>
-                                            <td>Female</td>
-                                            <td>15/11/1989</td>
-                                            <td>31243674390</td>
-                                            <td>Ajayi</td>
-                                            <td>titi@example.com</td>
-                                            <td>17 Itohan Street</td>
-                                            <td>Ikeja</td>
-                                            <td>Ikeja</td>
-                                            <td>Lagos</td>
-                                            <td>3</td>
-                                            <td>08078657689</td>
-                                            <td>glo</td>
-                                            <td>Private</td>
-                                            <td>Iphone X</td>
-                                            <td>1234567890</td>
-                                            <td>Active</td>
-                                            <td>07068974898</td>
-                                            <td>MTN</td>
-                                            <td>Private</td>
-                                            <td>Techno Camon 15</td>
-                                            <td>2008767862</td>
-                                            <td>Active</td>
-                                            <td>08107897867</td>
-                                            <td>Airtel</td>
-                                            <td>Business</td>
-                                            <td>Nokia 3310</td>
-                                            <td>134268927909</td>
-                                            <td>Active</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="/Aramide%20profile.html" style="color: rgb(230,7,34);">Aramide Angelica Mofe</a></td>
-                                            <td>Female</td>
-                                            <td>01/06/1978</td>
-                                            <td>1234567890</td>
-                                            <td>Alex</td>
-                                            <td>Angelica@example.com</td>
-                                            <td>20 limrock Street</td>
-                                            <td>Ikeja</td>
-                                            <td>Ikeja</td>
-                                            <td>Lagos</td>
-                                            <td>4</td>
-                                            <td>07031234567</td>
-                                            <td>MTN</td>
-                                            <td>Private</td>
-                                            <td>Iphone 6</td>
-                                            <td>123456789012</td>
-                                            <td>Active</td>
-                                            <td>08123456789</td>
-                                            <td>Airtel</td>
-                                            <td>Business</td>
-                                            <td>Samsung 10</td>
-                                            <td>134567890123</td>
-                                            <td>Active</td>
-                                            <td>08134567878</td>
-                                            <td>glo</td>
-                                            <td>Business</td>
-                                            <td>Oppo 1</td>
-                                            <td>145678901234</td>
-                                            <td>Active</td>
-                                            <td style="color: rgb(230,7,34);">09091234567</td>
-                                            <td style="color: rgb(230,7,34);">9Mobile</td>
-                                            <td style="color: rgb(230,7,34);">Business</td>
-                                            <td style="color: rgb(230,7,34);">Tecno 1</td>
-                                            <td style="color: rgb(230,7,34);">156789012345</td>
-                                            <td style="color: rgb(230,7,34);">Active</td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3"><a href="/Efe%20Profile.html" style="color: rgb(2,13,24);">Efe Ashton Esi</a></td>
-                                            <td>Male</td>
-                                            <td>20/12/1989</td>
-                                            <td>2345678901</td>
-                                            <td>Johnson</td>
-                                            <td>ashton@example.com</td>
-                                            <td>Plot 56 Otedola Street</td>
-                                            <td>Mafoluku</td>
-                                            <td>Oshodi</td>
-                                            <td>Lagos</td>
-                                            <td>2</td>
-                                            <td>08162345678</td>
-                                            <td>glo</td>
-                                            <td>Private</td>
-                                            <td>Ifinix 3</td>
-                                            <td>198990826561</td>
-                                            <td>Active</td>
-                                            <td>09098789909</td>
-                                            <td>9Mobile</td>
-                                            <td>Business</td>
-                                            <td>Iphone 7s</td>
-                                            <td>199877614530</td>
-                                            <td>Active</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5"><a href="/Bolutife%20profile.html" style="color: rgb(6,19,34);">Bolutife Bradley George</a></td>
-                                            <td>Female</td>
-                                            <td>28/02/1979</td>
-                                            <td>3456789012</td>
-                                            <td>Asorona</td>
-                                            <td>bradley@example.com</td>
-                                            <td>77 Obasa Close</td>
-                                            <td>Lekki</td>
-                                            <td>Eti Osa</td>
-                                            <td>Abuja</td>
-                                            <td>3</td>
-                                            <td>08098765678</td>
-                                            <td>Airtel</td>
-                                            <td>Private</td>
-                                            <td>Blackberry 8</td>
-                                            <td>178298789276</td>
-                                            <td>Active</td>
-                                            <td>07087659154</td>
-                                            <td>glo</td>
-                                            <td>Private</td>
-                                            <td>Iphone 6s</td>
-                                            <td>167828987299</td>
-                                            <td>Active</td>
-                                            <td>07081236555</td>
-                                            <td>Airtel</td>
-                                            <td>Private</td>
-                                            <td>Iphone 8</td>
-                                            <td>198099878892</td>
-                                            <td>Active</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea"><a href="/Jimi%20profile.html" style="color: rgb(2,16,31);">Jimi Brenden Williams</a></td>
-                                            <td>Male</td>
-                                            <td>18/09/1983</td>
-                                            <td>4567890123</td>
-                                            <td>Itohen</td>
-                                            <td>brendon@example.com</td>
-                                            <td>15 Adeniyi Jones&nbsp;</td>
-                                            <td>Osapa</td>
-                                            <td>Eti Osa 2</td>
-                                            <td>Kaduna</td>
-                                            <td>1</td>
-                                            <td>07089763456</td>
-                                            <td>9Mobile</td>
-                                            <td>Private</td>
-                                            <td>Samsung A5</td>
-                                            <td>198782637465</td>
-                                            <td>Active</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar1.jpeg?h=0ecc82101fb9a10ca459432faa8c0656"><a href="/Omoteke%20profile.html" style="color: rgb(2,9,17);">Omoteke Brielle Cole</a></td>
-                                            <td>Female</td>
-                                            <td>15/11/1990</td>
-                                            <td>5678901234</td>
-                                            <td>Coker</td>
-                                            <td>brielle@example.com</td>
-                                            <td>99 Laye Alimo Crescent</td>
-                                            <td>Festac</td>
-                                            <td>Festac</td>
-                                            <td>Delta</td>
-                                            <td>3</td>
-                                            <td>09098796467</td>
-                                            <td>glo</td>
-                                            <td>Private</td>
-                                            <td>Tecno Camon 5</td>
-                                            <td>176827892765</td>
-                                            <td>Active</td>
-                                            <td>08016782765</td>
-                                            <td>MTN</td>
-                                            <td>Private</td>
-                                            <td>Oppo 9</td>
-                                            <td>190927897627</td>
-                                            <td>Active</td>
-                                            <td>07126736322</td>
-                                            <td>9Mobile</td>
-                                            <td>Private</td>
-                                            <td>Samsung 10</td>
-                                            <td>152678243300</td>
-                                            <td>Active</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="/Aisha%20profile.html" style="color: rgb(3,10,17);">Aishat Bruno Danmuta</a><br></td>
-                                            <td>Female</td>
-                                            <td>18/09/1977</td>
-                                            <td>6789012345</td>
-                                            <td>Salami</td>
-                                            <td>bruno@exaple.com</td>
-                                            <td>97 Michaelson Street</td>
-                                            <td>Agege</td>
-                                            <td>Agege</td>
-                                            <td>Jos</td>
-                                            <td>2</td>
-                                            <td>07068729864</td>
-                                            <td>MTN</td>
-                                            <td>Private</td>
-                                            <td>Iphone 4s</td>
-                                            <td>199567254426</td>
-                                            <td>Active</td>
-                                            <td>07145672890</td>
-                                            <td>Airtel</td>
-                                            <td>Business</td>
-                                            <td>Techno Camon 2</td>
-                                            <td>182782565513</td>
-                                            <td>Active</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar3.jpeg?h=c5166867f10a4e454b5b2ae8d63268b3"><a href="/Farouk%20Profile.html" style="color: rgb(1,5,8);">Farouk Caesar Wakama</a></td>
-                                            <td>Male</td>
-                                            <td>25/05/1956</td>
-                                            <td>7890123456</td>
-                                            <td>Cole</td>
-                                            <td>caesar@example.com</td>
-                                            <td>64 Kolawole Street</td>
-                                            <td>Suru</td>
-                                            <td>Kano</td>
-                                            <td>Kano</td>
-                                            <td>2</td>
-                                            <td>08126739827</td>
-                                            <td>Airtel</td>
-                                            <td>Private</td>
-                                            <td>Iphone X Max</td>
-                                            <td>165276526781</td>
-                                            <td>Active</td>
-                                            <td>08071527819</td>
-                                            <td>glo</td>
-                                            <td>Business</td>
-                                            <td>Samsung F6</td>
-                                            <td>196762543781</td>
-                                            <td>Active</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar4.jpeg?h=fefb30b61c8459a66bd338b7d790c3d5"><a href="/Aminat%20Profile.html" style="color: rgb(2,13,25);">Aminat Cara Stevens</a></td>
-                                            <td>Female</td>
-                                            <td>09/08/1969</td>
-                                            <td>8901234567</td>
-                                            <td>Nwabueze</td>
-                                            <td>cara@example.com</td>
-                                            <td>44 Toyin Street</td>
-                                            <td>Ketu</td>
-                                            <td>Alimosho</td>
-                                            <td>River</td>
-                                            <td>3</td>
-                                            <td>08178297843</td>
-                                            <td>9Mobile</td>
-                                            <td>Private</td>
-                                            <td>Sony I5</td>
-                                            <td>178298267828</td>
-                                            <td>Active</td>
-                                            <td>09162786782</td>
-                                            <td>MTN</td>
-                                            <td>Private</td>
-                                            <td>Sony u</td>
-                                            <td>172890289233</td>
-                                            <td>Active</td>
-                                            <td>08076726356</td>
-                                            <td>glo</td>
-                                            <td>Private</td>
-                                            <td>Oppo 2</td>
-                                            <td>178927765644</td>
-                                            <td>Active</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar5.jpeg?h=35dc45edbcda6b3fc752dab2b0f082ea"><a href="/Otoide%20profile.html" style="color: rgb(3,14,25);">Otoide Cedric Ayemere</a></td>
-                                            <td>Male</td>
-                                            <td>11/12/1987</td>
-                                            <td>9012345678</td>
-                                            <td>Segun</td>
-                                            <td>cedric@example.com</td>
-                                            <td>6 Godson Street</td>
-                                            <td>Opebi</td>
-                                            <td>Ikeja</td>
-                                            <td>Lagos</td>
-                                            <td>1</td>
-                                            <td>09068368711</td>
-                                            <td>MTN</td>
-                                            <td>Private</td>
-                                            <td>Iphone 5s</td>
-                                            <td>198778822376</td>
-                                            <td>Active</td>
-                                        </tr>
-                                    </tbody>
+                                        @foreach($data as $row)
+                                        @php
+                                            $no= rand(1,5);
+                                        @endphp
+                    <tr data-id={{$row->id}}>  
+                    <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar{{$no}}.jpeg">{{ $row->name }}</a></td>
+                                        <td>{{ $row->gender }}</td>
+                                        <td>{{ $row->dob }}</td>
+                                        <td>{{ $row->nin }}</td>
+                                        <td>{{ $row->momname }}</td>
+                                        <td>{{ $row->email }}</td>
+                                        <td>{{ $row->address }}</td>
+                                        <td>{{ $row->lga }}</td>
+                                        <td>{{ $row->city }}</td>
+                                        <td>{{ $row->state }}</td>
+                                        <td>{{ $row->simno }}</td>
+                                        <td>{{ $row->phonenumber }}</td>
+                                        <td>{{ $row->network }}</td>
+                                        <td>{{ $row->linetype1 }}</td>
+                                        <td>{{ $row->phonetype1 }}</td>
+                                        <td>{{ $row->puk }}</td>
+                                        <td>@if ($row->blockstatus)
+                                          Inactive
+                                          @else 
+                                          Active
+                                          @endif</td>
+                                        <td>{{ $row->phonenumber2 }}</td>
+                                        <td>{{ $row->network2 }}</td>
+                                        <td>{{ $row->linetype2 }}</td>
+                                        <td>{{ $row->phonetype2 }}</td>
+                                        <td>{{ $row->imei2 }}</td>
+                                        <td>@if ($row->blockstatus2)
+                                          Inactive
+                                          @else 
+                                          Active
+                                          @endif</td>
+                                        <td>{{ $row->phonenumber3 }}</td>
+                                        <td>{{ $row->network3 }}</td>
+                                        <td>{{ $row->linetype3 }}</td>
+                                        <td>{{ $row->phonetype3 }}</td>
+                                        <td>{{ $row->imei3 }}</td>
+                                        <td>@if ($row->blockstatus3)
+                                          Inactive
+                                          @else 
+                                          Active
+                                          @endif</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>-</td>
+                                        <td>@if (($row->id==6 or $row->id==7) && $row->blockstatus4)
+                                          Active
+                                          @else 
+                                          -
+                                          @endif</td>
+                    </tr>
+                    @endforeach
+                                      </tbody>
                                     <tfoot>
                                         <tr></tr>
                                     </tfoot>
@@ -607,13 +319,14 @@
             <nav
                 class="navbar navbar-dark fixed-top align-items-start" style="height: 1348px;width: 224px;background-color: #33343aee;margin-top: 201px;">
                 <div class="container-fluid">
-                    <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/total%20subscribers.html"><span>Total Subscribers</span></a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/Smartphone%20Users.html"><span>Smartphone Users</span></a></li>
-                        <li class="nav-item" role="presentation"></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="/Blocked%20phone%20list.html"><span>Blocked Phone List</span></a><a class="nav-link" href="register.html"><span>Network Statistics</span></a><a class="nav-link" href="/Flagged%20Subscribers.html"><span>Flagged Subscribers</span></a></li>
-                    </ul>
+                     <ul class="nav navbar-nav text-light" id="accordionSidebar" style="margin-top: 11px;">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/dashboard"><i class="fas fa-tachometer-alt"></i><span style="font-size: 18px;">DASHBOARD</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/datatable"><span>Total Subscribers</span></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/smartusers"><span>Smartphone Users</span></a></li>
+                            {{-- <li class="nav-item" role="presentation"><a class="nav-link" href="#"><span>Business subscribers</span></a></li> --}}
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="/blockedlines"><span>Blocked Phone List</span></a><a class="nav-link" href="#"><span>Network Statistics</span></a><a class="nav-link" href="/flagged"><span>Flagged Subscribers</span></a></li>
+                        </ul>
+                    </div>
                 </div>
     </nav>
     </div>
@@ -623,6 +336,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="/assets/js/script.min.js?h=c36e815cffc23831d7329b951063bde2"></script>
+    <script >$(document).ready(function(){
+
+        $('[data-bs-chart]').each(function(index, elem) {
+            this.chart = new Chart($(elem), $(elem).data('bs-chart'));
+        });
+    
+    });
+        </script>
 </body>
 
 </html>
