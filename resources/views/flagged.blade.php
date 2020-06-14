@@ -190,7 +190,7 @@
                                     <tbody class="colorred">
                                         <tr></tr>
                                         <tr>
-                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a href="{{ route('profile', $data[14]->id) }}" style="color: rgb(230,7,34);">{{ $data[14]->name }}</a></td>
+                                            <td><img class="rounded-circle mr-2" width="30" height="30" src="/assets/img/avatars/avatar2.jpeg?h=5d142be9441885f0935b84cf739d4112"><a class="fullname" href="{{ route('profile', $data[14]->id) }}" style="color: rgb(230,7,34);">{{ $data[14]->name }}</a></td>
                                             <td>{{ $data[14]->gender }}</td>
                                       <td>{{ $data[14]->dob }}</td>
                                       <td>{{ $data[14]->nin }}</td>

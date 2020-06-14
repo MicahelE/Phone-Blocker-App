@@ -127,13 +127,13 @@
                 <div class="card mb-3" style="width: 281px;">
                     <div class="card-body text-center shadow">
                         @php
-                        $no= rand(1,22);
+                        $no= $profile->id % 6;
+                        if ($no==0) {
+                            $no=1;
+                        }
                     @endphp
-                        <!-- Start: avatars/avatar1.jpeg --> @if ( $profile->gender=='Male' )
-                        <img class="rounded-circle mb-3 mt-4" src="https://source.unsplash.com/EQFtEzJGERg" width="160" height="160">
-                        @else
-                        <img class="rounded-circle mb-3 mt-4" src="https://source.unsplash.com/g0pb9aXpbgQ" width="160" height="160"> 
-                        @endif 
+                        <!-- Start: avatars/avatar1.jpeg -->  
+                        <img class="rounded-circle mb-3 mt-4" src="/assets/img/avatars/avatar{{$no}}.jpeg" width="160" height="160">
                         <!-- End: avatars/avatar1.jpeg -->
                         <div class="mb-3"></div>
                     </div>

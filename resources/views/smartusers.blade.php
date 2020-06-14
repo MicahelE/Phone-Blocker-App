@@ -232,7 +232,7 @@
                                             $no= rand(1,5);
                                         @endphp
                     <tr data-id={{$row->id}}>  
-                    <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar{{$no}}.jpeg">{{ $row->name }}</a></td>
+                    <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar{{$no}}.jpeg"><a class="fullname" href="{{route('profile', $row->id)}}">{{ $row->name }}</a></td>
                                         <td>{{ $row->gender }}</td>
                                         <td>{{ $row->dob }}</td>
                                         <td>{{ $row->nin }}</td>
